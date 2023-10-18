@@ -1,0 +1,11 @@
+jyoti birla,123,jyoti,5464,25040.0,true,0.0
+Rupali,789,Rupali Birla,7828315246,70000.0,true,0.0
+krishna,345,Krishna birla,5443,7000.0,true,0.0
+purva,456,purva,78,9000.0,true,0.0
+anjali,789,anjali padmore,41326262362,9000.0,true,0.0
+jyoti birla,123,jyoti,3453,7000.0,true,0.0
+pankaj,01,pankaj,4543,4700.0,true,0.0
+pankaj,01,pankaj,3,600.0,true,0.0
+Harshika011,110,Harshika Malakar,9857346572,10000.0,true,0.0
+Jyoti098,867,Jyoti Birla,7828315246,10000.0,true,0.0
+pallavi,456,pallavi verma,42134,10030.0,true,0.0

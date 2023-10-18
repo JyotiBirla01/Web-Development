@@ -1,0 +1,126 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Admin",
+            "request": "launch",
+            "mainClass": "Practice.Admin",
+            "projectName": "ITEP_6e6aada6"
+        },
+        {
+            "type": "java",
+            "name": "Validation",
+            "request": "launch",
+            "mainClass": "Practice.Validation",
+            "projectName": "ITEP_6e6aada6"
+        },
+        {
+            "type": "java",
+            "name": "Str02",
+            "request": "launch",
+            "mainClass": "Practice.Str02",
+            "projectName": "ITEP_6e6aada6"
+        },
+        {
+            "type": "java",
+            "name": "MainAssi",
+            "request": "launch",
+            "mainClass": "MainAssi",
+            "projectName": "ITEP_6e6aada6"
+        },
+        {
+            "type": "java",
+            "name": "CommandLineArguments",
+            "request": "launch",
+            "mainClass": "CommandLineArguments",
+            "projectName": "ITEP_6e6aada6"
+        },
+        {
+            "type": "java",
+            "name": "Mock4",
+            "request": "launch",
+            "mainClass": "Mock4",
+            "projectName": "ITEP_6e6aada6"
+        },
+        {
+            "type": "java",
+            "name": "Test",
+            "request": "launch",
+            "mainClass": "Test",
+            "projectName": "ITEP_6e6aada6"
+        },
+        {
+            "type": "java",
+            "name": "SubArray",
+            "request": "launch",
+            "mainClass": "SubArray",
+            "projectName": "ITEP_6e6aada6"
+        },
+        {
+            "type": "java",
+            "name": "TestMain",
+            "request": "launch",
+            "mainClass": "TestMain",
+            "projectName": "ITEP_6e6aada6"
+        },
+        {
+            "type": "java",
+            "name": "BankApp",
+            "request": "launch",
+            "mainClass": "BankApp",
+            "projectName": "ITEP_6e6aada6"
+        },
+        {
+            "type": "java",
+            "name": "TestMain",
+            "request": "launch",
+            "mainClass": "MultiThreading.TestMain",
+            "projectName": "ITEP_6e6aada6"
+        },
+        {
+            "type": "java",
+            "name": "A",
+            "request": "launch",
+            "mainClass": "A",
+            "projectName": "ITEP_6e6aada6"
+        },
+        {
+            "type": "java",
+            "name": "Ass17",
+            "request": "launch",
+            "mainClass": "Ass17",
+            "projectName": "ITEP_6e6aada6"
+        },
+        {
+            "type": "java",
+            "name": "Logo",
+            "request": "launch",
+            "mainClass": "Logo",
+            "projectName": "ITEP_6e6aada6"
+        },
+        {
+            "type": "java",
+            "name": "C",
+            "request": "launch",
+            "mainClass": "C",
+            "projectName": "ITEP_6e6aada6"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Main",
+            "projectName": "ITEP_6e6aada6"
+        }
+    ]
+}

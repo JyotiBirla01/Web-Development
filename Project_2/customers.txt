@@ -1,0 +1,6 @@
+jyoti birla,123,jyoti,2345564334,50000.0,true
+krishna,123,krish,12345678,6000.0,true
+jyoti,456,jyu,98765434,4000.0,true
+anjali,123,ajali passdsdf,343534645665,3000.0,true
+anjali,12345,anjali pas,443546,40000.0,false
+jiya,5678,jhiyu,867867,60000.0,false

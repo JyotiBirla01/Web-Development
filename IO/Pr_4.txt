@@ -1,0 +1,1 @@
+ Java is high level language and platform independent 
