@@ -16,8 +16,8 @@ public class Admin {
 
     public void customerData() {
 
-        boolean fname, lname, faname, aadhar, pancard, dob, add, nominee, email, gender1, state;
-        fname = lname = faname = aadhar = pancard = dob = add = nominee = email = gender1 = state = true;
+        boolean fname, lname, faname, aadhar, pancard, dob, add, nominee, email, gender1;
+        fname = lname = faname = aadhar = pancard = dob = add = nominee = email = gender1=true ;
 
         boolean flag = true;
         while (flag) {
@@ -43,8 +43,8 @@ public class Admin {
             }
             while (faname) {
                 System.out.println("Enter Father's name ");
-                String FatherName = scanner.nextLine();
-                boolean c = FatherName.matches("[a-zA-Z , ]+");
+                String fatherName = scanner.nextLine();
+                boolean c = fatherName.matches("[a-zA-Z , ]+");
                 if (c == false) {
                     System.out.println("Invalide  father's name");
                     continue;
@@ -75,8 +75,8 @@ public class Admin {
             }
             while (dob) {
                 System.out.println("Enter date in this formate (yyyy-MM-dd) ");
-                String dateofBirth = scanner.nextLine();
-                boolean a = dateofBirth.matches("\\d{4}-\\d{2}-\\d{2}");
+                String dateOfBirth = scanner.nextLine();
+                boolean a = dateOfBirth.matches("\\d{4}-\\d{2}-\\d{2}");
                 if (a == false) {
                     System.out.println("Invalide date");
                     continue;
@@ -106,8 +106,9 @@ public class Admin {
             while (email) {
                 System.out.println("Enter  email address ");
                 String emailAddress = scanner.nextLine();
-                boolean a = emailAddress.matches("^[a-z0-9]+[@][a-z]+[\\.][a-z] ");
-             //         boolean a = emailAddress.matches("^(.+)@(.+)$ ");
+              //  boolean a = emailAddress.matches("^[a-z0-9]+[@][a-z]+[\\.][a-z] ");
+                  //   boolean a = emailAddress.matches("^(.+)@(.+)$ ");
+                     boolean a = emailAddress.matches("^[A-Za-z0-9+_.-]+@[A-Za-z0-9.-]+$");
                 if (a == false) {
                     System.out.println("Invalide email  address");
                     continue;
@@ -124,21 +125,14 @@ public class Admin {
                 }
                 gender1 = false;
             }
-            while (state) {
-                System.out.println("Enter state ");
-                String userName = scanner.nextLine();
-                boolean a = userName.matches("[a-zA-Z , ]+ ");
-                if (a == false) {
-                    System.out.println("Invalide state");
-                    continue;
-                }
-                state = false;
-            }
-
+           
             flag = false;
 
         }
 
+    }
+    public void createAccount(){
+        customerData();
     }
 
     public static void main(String[] args) {

@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Demo1",
+            "request": "launch",
+            "mainClass": "Practice.Swing.Demo1",
+            "projectName": "ITEP_6e6aada6"
+        },
+        {
+            "type": "java",
             "name": "Admin",
             "request": "launch",
             "mainClass": "Practice.Admin",

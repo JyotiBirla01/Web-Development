@@ -1,0 +1,84 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "A_Main",
+            "request": "launch",
+            "mainClass": "A_Main",
+            "projectName": "BankingApplicationProject_c36e8726"
+        },
+        {
+            "type": "java",
+            "name": "B11_Account",
+            "request": "launch",
+            "mainClass": "B11_Account",
+            "projectName": "BankingApplicationProject_c36e8726"
+        },
+        {
+            "type": "java",
+            "name": "B1_AdminFunction",
+            "request": "launch",
+            "mainClass": "B1_AdminFunction",
+            "projectName": "BankingApplicationProject_c36e8726"
+        },
+        {
+            "type": "java",
+            "name": "B_AdminLogin",
+            "request": "launch",
+            "mainClass": "B_AdminLogin",
+            "projectName": "BankingApplicationProject_c36e8726"
+        },
+        {
+            "type": "java",
+            "name": "C1_UserFunction",
+            "request": "launch",
+            "mainClass": "C1_UserFunction",
+            "projectName": "BankingApplicationProject_c36e8726"
+        },
+        {
+            "type": "java",
+            "name": "C_UserLogin",
+            "request": "launch",
+            "mainClass": "C_UserLogin",
+            "projectName": "BankingApplicationProject_c36e8726"
+        },
+        {
+            "type": "java",
+            "name": "Getdata",
+            "request": "launch",
+            "mainClass": "Getdata",
+            "projectName": "BankingApplicationProject_c36e8726"
+        },
+        {
+            "type": "java",
+            "name": "Particulerdata",
+            "request": "launch",
+            "mainClass": "Particulerdata",
+            "projectName": "BankingApplicationProject_c36e8726"
+        },
+        {
+            "type": "java",
+            "name": "Transection",
+            "request": "launch",
+            "mainClass": "Transection",
+            "projectName": "BankingApplicationProject_c36e8726"
+        },
+        {
+            "type": "java",
+            "name": "Updatedata",
+            "request": "launch",
+            "mainClass": "Updatedata",
+            "projectName": "BankingApplicationProject_c36e8726"
+        }
+    ]
+}
