@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=h1, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            height: 100vh;
+            width: 100%;
+            border: 1px solid red;
+
+        }
+
+        .header {
+            height: 90px;
+            width: 100%;
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .header img {
+            height: 50px;
+            width: 20%;
+            border: 1px solid blue;
+        }
+        .table,tr,th,td{
+            border: 1px solid;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="./download.png" alt="">
+        </div>
+        <h4>Name</h4>
+        <h4>Date</h4>
+        <!-- <table >
+            <tr>
+                <th>Item Name</th>
+                <th>Quantity</th>
+                <th>Price Total</th>
+                <th>After Discount</th>
+            </tr>
+            <tr>
+               <td>Item1 </td>
+               <td>item1</td>
+               <td></td>
+               <td></td>
+            </tr>
+            <tr>
+                <td>Item2 </td>
+                <td></td>
+                <td></td>
+                <td></td>
+             </tr>
+             <tr>
+                <td>Item3 </td>
+                <td></td>
+                <td></td>
+                <td></td>
+             </tr>
+             <tr>
+                <td>Item4 </td>
+                <td></td>
+                <td></td>
+                <td></td>
+             </tr>
+             <tr>
+                <td>Item1 </td>
+                <td></td>
+                <td></td>
+                <td></td>
+             </tr>
+             <tr>
+                <td>Item1 </td>
+                <td></td>
+                <td></td>
+                <td></td>
+             </tr>
+             <tr>
+                <td>Item1 </td>
+                <td></td>
+                <td></td>
+                <td></td>
+             </tr>
+             <tr>
+                <td>Item1 </td>
+                <td></td>
+                <td></td>
+                <td></td>
+             </tr>
+
+        </table> -->
+
+    </div>
+</body>
+<script>
+    document.write("<pre>");
+    // var userName = prompt("Enter User Name");
+    // document.writeln(userName);
+    // var gender = prompt("Enter Gender");
+    // document.writeln(gender);
+    // var item1 = prompt("Enter the quantity of item1") * 1;
+    // document.writeln(item1);
+    // var item2 = prompt("Enter the quantity of item2") * 1;
+    // document.writeln(item2);
+    // var item3 = prompt("Enter the quantity of item3") * 1;
+    // document.writeln(item3);
+    // var item4 = prompt("Enter the quantity of item4") * 1;
+    // document.writeln(item4);
+    // var item5 = prompt("Enter the quantity of item5") * 1;
+    // document.writeln(item5);
+    // var item6 = prompt("Enter the quantity of item6") * 1;
+    // document.writeln(item6);
+    // var item7 = prompt("Enter the quantity of item7") * 1;
+    // document.writeln(item7);
+    // var item8 = prompt("Enter the quantity of item8") * 1;
+    // document.writeln(item8);
+    // var item9 = prompt("Enter the quantity of item9") * 1;
+    // document.writeln(item9);
+    // var item10 = prompt("Enter the quantity of item10") * 1;
+    // document.writeln(item10);
+    // var carrybag = prompt("Do you want carry bag y/n");
+    var bag_amount;
+    if (carrybag == y)
+        bag_amount = 10;
+    total_amount += bag_amount;
+
+
+
+
+
+    var amount1 = 10;
+    var amount2 = 20;
+    var amount3 = 30;
+    var amount4 = 40;
+    var amount5 = 50;
+    var amount6 = 60;
+    var amount7 = 70;
+    var amount8 = 80;
+    var amount9 = 90;
+    var amount10 = 100;
+
+
+    var total_item1_amount = item1 * amount1;
+    var total_item2_amount = item2 * amount2;
+    var total_item3_amount = item3 * amount3;
+    var total_item4_amount = item4 * amount4;
+    var total_item5_amount = item5 * amount5;
+    var total_item6_amount = item6 * amount6;
+    var total_item7_amount = item7 * amount7;
+    var total_item8_amount = item8 * amount8;
+    var total_item9_amount = item9 * amount9;
+    var total_item10_amount = ite10 * amount10;
+
+    if (item1 > 4) {
+        amount1 = amount1 * (5 / 100);
+    }
+
+    amount5 = amount5 * (10 / 100);
+    amount10 = amount10 * (15 / 100);
+
+
+    var total_amount = total_item1_amount + total_item2_amount + total_item3_amount + total_item4_amount + total_item5_amount + total_item6_amount
+        + total_item7_amount + total_item8_amount + total_item9_amount + total_item10_amount;
+
+    var discount_amount = (total_item1_amount - amount1) + total_item2_amount + total_item3_amount + total_item4_amount + (total_item5_amount - amount5) + total_item6_amount
+        + total_item7_amount + total_item8_amount + total_item9_amount + (total_item10_amount - amount5);
+
+    if (total_amount > 10000)
+        total_amount = total_amount * (15 / 100);
+    else (total_amount >= 5000 && total_amount <= 10000)
+    total_amount = total_amount * (10 / 100);
+
+    var gst = total_amount * (10 / 100);
+    var gift = "";
+    if (gender == "f" && gender == "F") {
+        gift = "cadeberry";
+    }
+    else
+        gift = "Lader Wallet";
+
+
+document.write("<table style=border 1px solid>");
+    document.write("<tr>"); 
+        document.write("<th>") ;
+            document.write("</th>");
+        document.write("</tr>");
+    document.write("</table>");
+    document.write("</pre>");
+
+</script>
+
+</html>
