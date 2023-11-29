@@ -1,0 +1,18 @@
+<!-- Q.79 Print Rectangle star pyramid as:
+******
+* *
+* *
+****** -->
+<pre>
+<script>
+    for (let i = 1; i <= 4; i++) {
+        for (let j = 1; j <= 6; j++) {
+            if ((i = 1) || (i = 4) || (j = 1) || (j = 3))
+                document.write("*");
+            else
+                document.write(" ");
+        }
+        document.write("<br>");
+    }
+</script>
+</pre>

@@ -1,0 +1,27 @@
+<!-- Q.86 Design the following continues number pyramid:
+1
+121
+12321
+1234321
+123454321 -->
+
+<script>
+    // for (let i = 1; i <= 5; i++) {
+    //     for (let j = 1; j <= i; j++) {
+    //         document.write(j);
+    //     }
+    //     for (let j = i-1; j >= 1; j--) {
+    //         document.write(j);
+    //     }
+    //     document.write("<br>");
+    // }
+    let k = 0;
+    for (let i = 1; i <= 5; i++) {
+        k = i >= 1 ? k + 2 : k = k;
+        for (let j = 1; j <= k; j++) {
+            document.write(k);
+        }
+        document.write("<br>");
+    }
+
+</script>

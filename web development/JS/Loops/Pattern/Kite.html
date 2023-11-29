@@ -1,0 +1,26 @@
+<!--     *
+       * * *
+      * * * * *
+     * * * * * * *
+       * * * * *
+        * * *
+          *
+ -->
+<pre>
+    <script>
+        let k = parseInt(7 / 2),l=0;
+        for (let i = 1; i <= 7; i++) {
+            k = (i <= 4) ? --k : ++k;
+            for (let s = 0; s <= k; s++) {
+                document.write(" ");
+            }
+            
+            for(let c=1; c<=l; c++){
+                document.write("*");
+            }
+            document.write("<br>");
+            l=(i<=4)?l+2:l-2;
+
+        }
+    </script>
+ </pre>

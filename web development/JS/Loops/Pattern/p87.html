@@ -1,0 +1,41 @@
+<!-- Q.87 Print following alternative number-star pyramid
+as:
+1
+2*2
+3*3*3
+4*4*4*4
+4*4*4*4
+3*3*3
+2*2
+1 -->
+<!-- <script>
+    for (let i = 1; i <= 4; i++) {
+        for (let j = 1; j <= (2 * i) - 1; j++) {
+            if ((j % 2 == 0))
+                document.write("*");
+            else
+                document.write(i);
+        }
+        document.write("<br>");
+    }
+    for (let i = 4; i >= 1; i--) {
+        for (let j = 1; j <= (2 * i) - 1; j++) {
+            if ((j % 2 == 0))
+                document.write("*");
+            else
+                document.write(i);
+        }
+        document.write("<br>");
+    }
+</script> -->
+
+<script>
+    let  k=0;
+    for(let i=1; i<=8; i++){
+    k= (k<=1)?k+2:k=k; 
+    for(let j=1; j<=(2*i)-1; j++){
+        document.write(i);
+    }  
+    document.write("<br>");
+    }
+</script>

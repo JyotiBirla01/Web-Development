@@ -1,0 +1,21 @@
+<!-- 
+A
+1
+BB
+22
+CCC
+333 -->
+<script>
+    let k=0,a=64,d=0;
+    for(let i=1; i<=6; i++){
+       
+            k=(i%2!=0)?++k:k=k;
+            a=(i%2!=0)?++a:a=a;
+            d=(i%2==0)?++d:d=d;
+            for(let j=1; j<=k; j++){
+                (i%2==0)?document.write(d):document.write(String.fromCharCode(a));
+            }
+            document.write("<br>");
+    }
+
+</script>

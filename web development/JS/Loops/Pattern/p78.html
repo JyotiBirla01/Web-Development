@@ -1,0 +1,19 @@
+<!-- 
+
+Q.77 Write the 1 and 0 number pyramid program as:
+1
+01
+101
+0101
+10101 -->
+<script>
+    for (let i = 1; i <= 5; i++) {
+        for (let j = 1; j <= i; j++) {
+            if ((i + j) % 2 == 0)
+                document.write("1");
+            else
+                document.write("0");
+        }
+        document.write("<br>");
+    }
+</script>

@@ -1,0 +1,19 @@
+<!-- Q.76 Write a program to print 0 and 1 number triangle
+as:
+1
+01
+010
+1010
+10101 -->
+<script>
+    for (let i = 1; i <= 5; i++) {
+        for (let j = 1; j <= i; j++) {
+            if ((i + j) % 2 == 0) {
+                document.write("1");
+            }
+            else
+                document.write("0");
+        }
+        document.write("<br>");
+    }
+</script>

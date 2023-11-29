@@ -1,0 +1,19 @@
+<!-- Q.81 Print continue character number pyramid as:
+1
+A B
+2 3 4
+C D E F
+5 6 7 8 9 -->
+<script>
+    let k=0;
+    for(let i=1; i<=5;i++){
+        for(let j=1; j<=i; j++){
+            if(i%2!=0){
+            document.write(j);
+            }
+        else
+        document.write(String.fromCharCode(j+64));
+        }
+        document.write("<br>");
+    }
+</script>

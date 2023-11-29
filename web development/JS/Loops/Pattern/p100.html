@@ -1,0 +1,19 @@
+<!-- 
+
+
+ABCDE
+A__D
+A_C
+AB
+A -->
+<script>
+    for(let i=5; i>=1; i--){
+        for(let j=1; j<=i; j++){
+            if((i==5)||(j==i)||(j==1))
+            document.write(String.fromCharCode(j+64));
+        else
+        document.write("_");
+        }
+        document.write("<br>");
+    }
+</script>

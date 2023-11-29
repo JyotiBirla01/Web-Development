@@ -1,0 +1,26 @@
+<!-- 
+
+A
+B A
+C B A
+D C B A
+E D C B A
+D C B A
+C B A
+B A
+A -->
+
+<script>
+    for (var i = 1; i <= 5; i++) {
+        for (var j = i; j >= 1; j--) {
+            document.write(String.fromCharCode(j + 64));
+        }
+        document.write("<br>");
+    }
+    for (var i = 4; i >= 1; i--) {
+        for (var j = i; j >= 1; j--) {
+            document.write(String.fromCharCode(j + 64));
+        }
+        document.write("<br>");
+    }
+</script>
