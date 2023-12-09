@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .container{
+            height: 500px;
+            width: 100%;
+            border: 2px solid black;
+         
+        }
+        .box{
+            height: 100px;
+            width: 300px;
+            border: 1px solid red;
+            background-color: blue;
+            animation-name: rightmovement;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            /* animation-delay: 2s; */
+            position: relative;
+            animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+            animation-direction: alternate;
+            animation-fill-mode: backwards;
+
+        }
+        @keyframes rightmovement{
+            from{
+                top: 0;
+                left: 0;
+  }
+            to{
+                top: 0;
+                left: 1200px;
+
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+
+        </div>
+    </div>
+    
+</body>
+</html>

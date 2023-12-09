@@ -1,0 +1,23 @@
+<!-- 50)	WAP to find out all the palindrome numbers between two entered numbers -->
+<pre>
+<script>
+    let start = parseInt(prompt("Enter first the number "));
+    let end = parseInt(prompt("Enter second the number "));
+    let rem, n, rev;
+
+        let i, p;
+        for (i = start, n = 0; i <= end; i++) {
+            n = i;
+            p = n;
+            rev = 0;
+            while (parseInt(n!=0)) {
+                rem = parseInt(n%10);
+                rev = rev * 10 + rem;
+                n = parseInt(n/10);
+            }
+             if (rev == p)
+                document.write(p + "  is pallindrom");
+        }
+
+</script>
+</pre>

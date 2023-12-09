@@ -1,0 +1,29 @@
+<!-- 51)	WAP to find out all the Armstrong numbers between two entered numbers -->
+<pre>
+<script>
+    let start = parseInt(prompt("Enter the first  number"));
+    let end = parseInt(prompt("Enter the second  number"));
+
+    let rem, n;
+    let cube, sum;
+    let i, p;
+    for (i = start, n = 0; i <= end; i++) {
+        n = i;
+        p = n;
+        sum = 0;
+
+        while (parseInt(n != 0)) {
+            rem = parseInt(n % 10);
+            cube = sum + rem * rem * rem;
+
+            n = parseInt(n / 10);
+
+        }
+
+        if (sum == p) {
+            System.out.println(p + "  is Armstrong number ");
+        }
+    }
+
+</script>
+</pre>

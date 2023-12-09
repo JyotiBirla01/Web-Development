@@ -1,0 +1,1177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lugx_Gaming</title>
+    <link rel="stylesheet" media="screen and (max-width:480px)" href="style.css">
+    <!-- <link rel="stylesheet" media="screen and (max-width:813px)" href="style2.css"> -->
+    <!-- <link rel="stylesheet" media="screen and (max-width:824px)" href="style2.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Poppins, sans-serif;
+        }
+
+        .main {
+            height: 175vh;
+            width: 100%;
+            /* border: 1px solid magenta; */
+        }
+
+        .home {
+            height: 140vh;
+            width: 98vw;
+            background-image: url(./assets/images/banner-bg.jpg);
+            /* border: 1px solid red; */
+            border-radius: 0 0 15% 15%;
+        }
+
+        .header-area {
+            height: 150px;
+            width: 100%;
+            /* border: 1px solid black; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logo {
+            height: 60px;
+            width: 30%;
+            /* border: 1px solid white; */
+            display: flex;
+            justify-content: center;
+        }
+
+        .menu {
+            height: 60px;
+            width: 70%;
+            /* border: 1px solid white; */
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .menu ul {
+            display: flex;
+            column-gap: 40px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .menu ul li {
+            list-style: none;
+
+
+        }
+
+        .menu ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 15px;
+            padding: 10px 20px 10px 20px;
+            /* border: 1px solid red; */
+            border-radius: 19px;
+
+        }
+
+        .menu ul li:nth-child(1) a {
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+
+        .menu ul li:nth-child(5) a {
+            background-color: #ee626b;
+        }
+
+        .menu ul li a:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+
+        .menu ul li:nth-child(5) a:hover {
+            background-color: #ee626b;
+        }
+
+        .home-container {
+            display: flex;
+        }
+
+        .home-left {
+            height: 550px;
+            width: 50%;
+            /* border: 1px solid red; */
+            position: relative;
+
+        }
+
+        .home-right {
+            height: 550px;
+            width: 50%;
+            position: relative;
+            /* border: 1px solid red; */
+        }
+
+        .home-content {
+            height: 400px;
+            width: 70%;
+            /* border: 1px solid white; */
+            position: absolute;
+            left: 110px;
+            top: 90px;
+            color: white;
+        }
+
+        .home-content h6 {
+            font-size: 20px;
+            font-weight: 500;
+            text-transform: uppercase;
+
+        }
+
+        .home-content h2 {
+            font-size: 46px;
+            text-transform: uppercase;
+            line-height: 55px;
+            font-weight: 700;
+            font-family: Poppins, sans-serif;
+            margin-top: 15px;
+        }
+
+        .curve-image {
+            height: 20px;
+            width: 200px;
+            position: absolute;
+            left: 120px;
+            /* border: 1px solid white; */
+        }
+
+        .home-content p {
+            margin-top: 50px;
+            margin-bottom: 70px;
+            font-size: 15px;
+            line-height: 25px;
+            font-family: Poppins, sans-serif;
+            position: relative;
+
+        }
+
+        .search {
+            height: 50px;
+            width: 450px;
+            /* border: 1px solid red; */
+            position: absolute;
+
+        }
+
+        .search form input {
+            height: 50px;
+            width: 450px;
+            border-radius: 25px;
+            border: none;
+            color: #7a7a7a;
+            font-size: 15px;
+
+
+        }
+
+        .search form input::placeholder {
+            position: absolute;
+            left: 30px;
+        }
+
+        .search form button {
+            text-transform: uppercase;
+            font-size: 15px;
+            font-weight: 600;
+            background-color: #ee626b;
+            height: 50px;
+            width: 150px;
+            border-radius: 25px;
+            border: none;
+            color: white;
+            position: absolute;
+            right: 1px;
+
+        }
+
+        .search form button:hover {
+            background-color: #0071f8;
+        }
+
+        .banner-image {
+            height: 420px;
+            width: 52%;
+            /* border: 1px solid white; */
+            position: absolute;
+            left: 200px;
+            top: 80px;
+            color: white;
+
+        }
+
+        .banner-image img {
+            height: 420px;
+            width: 100%;
+
+            border-radius: 20px;
+        }
+
+        .banner-image div:nth-child(2) {
+            height: 40px;
+            width: 70px;
+            border-radius: 25px;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 20px;
+            font-weight: 600;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #0071f8;
+        }
+
+        .banner-image div:nth-child(3) {
+            height: 100px;
+            width: 100px;
+            background-color: #ee626b;
+            border-radius: 50%;
+            font-size: 27px;
+            font-weight: 800;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            bottom: -20px;
+            left: -30px;
+        }
+
+
+        .features {
+            height: 35%;
+            width: 82%;
+            /* border: 1px solid green; */
+            display: flex;
+            justify-content: space-around;
+            position: absolute;
+            left: 100px;
+            bottom: -380px;
+
+        }
+
+        .features div {
+            height: 200px;
+            width: 250px;
+            border-radius: 25px;
+            /* border: 1px solid red; */
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .features div div {
+            height: 90px;
+            width: 90px;
+            border-radius: 50%;
+            background-color: #0071f8;
+        }
+
+        .features div h4 {
+            font-size: 17px;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-top: 20px;
+        }
+
+        .features div div:hover {
+
+            background-color: #ee626b;
+        }
+
+        /* ===================SECTION-TRENDING============== */
+        .trending {
+            height: 95vh;
+            width: 100%;
+            /* border: 1px solid red; */
+            position: relative;
+
+        }
+
+        .heading {
+            height: 150px;
+            width: 100%;
+            display: flex;
+            /* border: 1px solid red; */
+
+        }
+
+        .trending-left {
+            height: 80px;
+            width: 50%;
+            /* border: 1px solid green; */
+        }
+
+        .trending-left h6 {
+            font-size: 15px;
+            color: #ee626b;
+            margin-left: 100px;
+            text-transform: uppercase;
+
+
+        }
+
+        .trending-left h2 {
+            font-size: 35px;
+            font-weight: bold;
+            margin-left: 100px;
+            margin-top: 20px;
+            text-transform: capitalize;
+
+
+        }
+
+        .trending-right {
+            height: 80px;
+            width: 50%;
+            text-transform: uppercase;
+            /* border: 1px solid green; */
+        }
+
+        .trending-right div {
+            height: 50px;
+            width: 130px;
+            border-radius: 25px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #ee626b;
+            position: absolute;
+            right: 150px;
+            top: 30px;
+
+        }
+
+        .trending-right div:hover {
+            background-color: #008af8;
+        }
+
+        .boxes {
+            height: 300px;
+            width: 80%;
+            display: flex;
+            justify-content: space-around;
+            position: absolute;
+            left: 100px;
+            /* border: 1px solid red; */
+
+        }
+
+        .item {
+            height: 280px;
+            width: 250px;
+            border-radius: 20px;
+            /* border: 1px solid red; */
+            background-color: #f7f7f7;
+
+        }
+
+        .thumb {
+            height: 180px;
+            width: 250px;
+            border-radius: 20px;
+            /* border: 1px solid red; */
+            position: relative;
+        }
+
+        .thumb img {
+            height: 180px;
+            width: 250px;
+            border-radius: 20px;
+        }
+
+        .price {
+            text-align: right;
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            border-radius: 10px;
+            background-color: #008af8;
+            font-size: 17px;
+            font-weight: 600;
+            color: #fff;
+            padding: 8px 15px 6px 15px;
+
+        }
+
+        .price em {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            text-decoration: line-through;
+            display: block;
+        }
+
+        .down-content {
+            height: 90px;
+            width: 250px;
+            /* border: 1px solid black; */
+            position: relative;
+        }
+
+        .down-content a i {
+            position: absolute;
+            top: 10px;
+            left: 13px;
+        }
+
+        .down-content span {
+            font-size: 14px;
+            color: #7a7a7a;
+            margin: 15px;
+            display: inline-block;
+        }
+
+        .down-content h4 {
+            margin-left: 15px;
+        }
+
+        .down-content a {
+            position: absolute;
+            text-align: center;
+            width: 40px;
+            height: 40px;
+            background-color: #ee626b;
+            color: #fff;
+            border-radius: 50%;
+            left: 180px;
+            top: 30px;
+
+        }
+
+        .down-content a:hover {
+            background-color: #0071f8;
+        }
+
+        /* ========================SECTION TOP GAMES========================= */
+        .most-played {
+            height: 700px;
+            width: 100%;
+            /* border: 1px solid blue; */
+        }
+
+        .most-played-container {
+            height: 600px;
+            width: 100%;
+            background-color: #f7f7f7;
+            border-radius: 120px;
+            /* border: 1px solid purple; */
+            position: relative;
+        }
+
+        .most-played-heading {
+            height: 200px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* border: 2px solid red; */
+        }
+
+        .most-played-left {
+            height: 100px;
+            width: 50%;
+            /* border: 1px solid green; */
+
+        }
+
+        .most-played-left h6 {
+            color: #ee626b;
+            font-size: 15px;
+            text-transform: uppercase;
+            font-weight: 600;
+            position: absolute;
+            left: 100px;
+        }
+
+        .most-played-left h2 {
+
+            font-size: 35px;
+            text-transform: capitalize;
+            font-weight: bold;
+            position: absolute;
+            left: 100px;
+            top: 90px;
+
+        }
+
+        .most-played-right {
+            height: 100px;
+            width: 50%;
+            /* border: 1px solid green; */
+
+        }
+
+        .most-played-right div {
+            height: 45px;
+            width: 120px;
+            border-radius: 25px;
+            background-color: #ee626b;
+            /* border: 1px solid green; */
+            text-transform: uppercase;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            right: 120px;
+            top: 90px;
+
+        }
+
+        .most-played-right div:hover {
+            background-color: #0071f8;
+        }
+
+        .explore {
+            height: 350px;
+            width: 85%;
+            display: flex;
+            position: absolute;
+            left: 110px;
+            justify-content: space-around;
+            /* border: 1px dotted blueviolet; */
+
+        }
+
+        .explore>div {
+            height: 270px;
+            width: 170px;
+            border-radius: 25px;
+            background-color: white;
+            /* border: 1px solid red; */
+
+        }
+
+        .explore>div:hover :nth-child(2)>h4 {
+            color: #0071f8;
+        }
+
+        .explore>div:hover :nth-child(2)>div {
+            background-color: #0071f8;
+        }
+
+        .image-div {
+            height: 170px;
+            width: 170px;
+            border-radius: 25px;
+            /* border: 1px solid red; */
+
+        }
+
+        .image-div img {
+            height: 170px;
+            width: 170px;
+            border-radius: 25px;
+
+        }
+
+        .explore-down-content {
+            position: relative;
+        }
+
+        .explore-down-content span {
+            font-size: 14px;
+            color: #7a7a7a;
+            display: flex;
+            justify-content: center;
+            margin: 10px;
+        }
+
+        .explore-down-content h4 {
+            display: flex;
+            justify-content: center;
+        }
+
+        .explore-down-content div {
+
+            text-transform: uppercase;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 13px;
+            font-weight: 700;
+            width: 100px;
+            height: 40px;
+            border-radius: 25px;
+            background-color: #ee626b;
+            color: #fff;
+            position: absolute;
+            left: 35px;
+            top: 70px;
+
+
+        }
+
+        /* ==========================SECTION-CATEGORY=================== */
+        .section-category {
+            height: 550px;
+            width: 100%;
+            /* border: 1px solid red; */
+        }
+
+        .category-heading {
+            height: 150px;
+            width: 100%;
+            /* border: 1px solid black; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .category-heading h6 {
+            color: #ee626b;
+            text-transform: uppercase;
+            font-size: 14px;
+            font-weight: bolder;
+            line-height: 40px;
+
+        }
+
+        .category-heading h2 {
+            text-transform: capitalize;
+            font-size: 35px;
+            font-weight: 700;
+        }
+
+        .category-items {
+            height: 300px;
+            width: 83%;
+            display: flex;
+            justify-content: space-between;
+            position: absolute;
+            left: 120px;
+            /* border: 1px solid magenta; */
+        }
+
+        .category-items>div {
+            position: relative;
+            height: 250px;
+            width: 200px;
+            border-radius: 25px;
+            background-color: #0071f8;
+            /* border: 1px solid magenta; */
+        }
+
+        .category-items>div h4 {
+            color: white;
+            position: absolute;
+            left: 80px;
+            top: 30px;
+        }
+
+        .category-items>div>div {
+            height: 180px;
+            width: 200px;
+            border-radius: 25px;
+            /* border: 1px solid black; */
+            position: absolute;
+            top: 70px;
+        }
+
+        .category-items>div>div>img {
+            height: 180px;
+            width: 200px;
+            border-radius: 25px;
+
+        }
+
+        /* ===========SECTION-05-SHOP============== */
+        .section-shop {
+            height: 800px;
+            width: 100%;
+            position: relative;
+            /* border: 1px solid red; */
+        }
+
+        .section-shop div:nth-child(1) {
+            height: 500px;
+            width: 520px;
+            border-radius: 25px;
+            position: absolute;
+            left: 400px;
+            /* border: 1px solid black; */
+        }
+
+        .section-shop div:nth-child(1) img {
+            height: 500px;
+            width: 520px;
+            border-radius: 25px;
+
+        }
+
+        .section-shop div:nth-child(2) {
+            height: 600px;
+            width: 430px;
+            border-radius: 25px;
+            background-color: #f7f7f7;
+            position: absolute;
+            left: 160px;
+            top: 80px;
+            /* border: 1px solid black; */
+        }
+
+        .section-shop div:nth-child(2) div {
+            height: 450px;
+            width: 250px;
+            position: absolute;
+            left: 80px;
+            top: 80px;
+            /* border: 1px solid red; */
+        }
+
+        .section-shop div:nth-child(2) div h6 {
+            color: #ee626b;
+            font-size: 16px;
+            text-transform: uppercase;
+        }
+
+        .section-shop div:nth-child(2) div h2 {
+            line-height: 44px;
+            margin-top: 30px;
+            margin-bottom: 40px;
+            font-size: 35px;
+            text-transform: capitalize;
+        }
+
+        .section-shop div:nth-child(2) div h2 em {
+            color: #0071f8;
+            font-style: normal;
+        }
+
+        .section-shop div:nth-child(2) div p {
+            line-height: 28px;
+            font-size: 14px;
+            color: #4a4a4a;
+            font-weight: 700;
+        }
+
+        .section-shop div:nth-child(2) div div {
+            text-transform: uppercase;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 45px;
+            width: 130px;
+            font-size: 14px;
+            font-weight: 600;
+            background-color: #ee626b;
+            border-radius: 25px;
+            position: absolute;
+            top: 400px;
+            left: 1px;
+
+        }
+
+        .section-shop div:nth-child(2) div div:hover {
+            background-color: #0071f8;
+        }
+
+        .section-shop div:nth-child(3) {
+            height: 400px;
+            width: 450px;
+            border-radius: 25px;
+            background-color: #f7f7f7;
+            position: absolute;
+            left: 750px;
+            top: 210px;
+            /* border: 1px solid black; */
+        }
+
+        .section-shop div:nth-child(3) div {
+            height: 300px;
+            width: 350px;
+            /* border: 1px solid red; */
+            position: absolute;
+            left: 50px;
+            top: 50px;
+        }
+
+        .section-shop div:nth-child(3) div h6 {
+            color: #ee626b;
+            font-size: 14px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .section-shop div:nth-child(3) div h2 {
+            margin-top: 20px;
+            margin-bottom: 40px;
+            font-size: 35px;
+            line-height: 45px;
+
+        }
+
+        .section-shop div:nth-child(3) div h2 em {
+            font-style: normal;
+            color: #0071f8;
+
+
+        }
+
+        .section-shop form input {
+            height: 45px;
+            border: none;
+            border-radius: 20px;
+            width: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .section-shop form input::placeholder {
+            position: absolute;
+            left: 30px;
+        }
+
+        .section-shop button {
+            height: 45px;
+            width: 160px;
+            font-size: 15px;
+            border-radius: 25px;
+            color: white;
+            text-transform: uppercase;
+            background-color: #ee626b;
+            border: none;
+            position: absolute;
+            right: 30px;
+            bottom: 45px;
+        }
+
+        .section-shop button:hover {
+            background-color: #0071f8;
+        }
+
+        .footer-container {
+            height: 150px;
+            width: 100%;
+            /* border: 1px solid red; */
+
+        }
+
+        .footer {
+            height: 150px;
+            width: 100%;
+            /* border: 1px solid black; */
+            position: relative;
+        }
+
+        .footer img {
+            height: 150px;
+            width: 100%;
+            border-radius: 150px 150px 0px 0px;
+
+        }
+
+        .content {
+            display: flex;
+            align-items: center;
+            height: 80px;
+            width: 46%;
+            /* border: 1px solid red; */
+            position: absolute;
+            top: 1px;
+            left: 350px;
+            color: white;
+            background-color: #0071f8;
+
+        }
+
+        .content a {
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="main">
+            <section class="home">
+                <!-- ------------------HEADER------------- -->
+                <header class="header-area">
+                    <div class="logo">
+                        <a href=""><img src="./assets/images/logo.png" alt=""></a>
+                    </div>
+                    <div class="menu">
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#our shop">Our Shop</a></li>
+                            <li><a href="#product details">Product Details</a></li>
+                            <li><a href="#contact us">Contact Us</a></li>
+                            <li><a href="#sign in">SIGN IN</a></li>
+                        </ul>
+                    </div>
+
+                </header>
+                <div class="home-container">
+                    <div class="home-left">
+                        <div class="home-content">
+                            <h6>welcome to lugx</h6>
+                            <h2>best gaming site ever!</h2>
+                            <div class="curve-image"><img src="./assets/images/caption-dec.png" alt=""></div>
+                            <p>LUGX Gaming is free Bootstrap 5 HTML CSS website template for your gaming websites. You
+                                can
+                                download and use this layout for commercial purposes. Please tell your friends about
+                                TemplateMo.</p>
+                            <div class="search">
+                                <form action="">
+                                    <input type="text" name="search" id="" placeholder="Type Something">
+                                    <button>search now</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="home-right">
+                        <div class="banner-image">
+                            <img src="./assets/images/banner-image.jpg" alt="">
+                            <div>$22</div>
+                            <div>-40%</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="features">
+                    <div>
+                        <div>
+                            <div class="image"><img src="./assets/images/featured-01.png" alt=""></div>
+                        </div>
+                        <h4>free storage</h4>
+                    </div>
+                    <div>
+                        <div>
+                            <div class="image"><img src="./assets/images/featured-02.png" alt=""></div>
+                        </div>
+                        <h4>user more</h4>
+                    </div>
+                    <div>
+                        <div>
+                            <div class="image"><img src="./assets/images/featured-03.png" alt=""></div>
+                        </div>
+                        <h4>reply ready</h4>
+                    </div>
+                    <div>
+                        <div>
+                            <div class="image"><img src="./assets/images/featured-04.png" alt=""></div>
+                        </div>
+                        <h4>easy layout</h4>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+        </div>
+        <!-- ----------------SECTION-02- TRENDING-------------- -->
+        <section class="trending">
+
+            <div class="heading">
+                <div class="trending-left">
+                    <h6>trending</h6>
+                    <h2>trending games</h2>
+                </div>
+                <div class="trending-right">
+                    <div>View All</div>
+                </div>
+            </div>
+
+
+            <div class="boxes">
+                <div class="item">
+                    <div class="thumb">
+                        <a href=""><img src="./assets/images/trending-01.jpg" alt=""></a>
+                        <div class="price"><em>$28</em>$20</div>
+                    </div>
+                    <div class="down-content">
+                        <span class="category">Action</span>
+                        <h4>Assasin Creed</h4>
+                        <a href=""><i class="fa-solid fa-bag-shopping"></i></a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="thumb">
+                        <a href=""><img src="./assets/images/trending-02.jpg" alt=""></a>
+                        <div class="price">$44</div>
+                    </div>
+                    <div class="down-content">
+                        <span class="category">Action</span>
+                        <h4>Assasin Creed</h4>
+                        <a href=""><i class="fa-solid fa-bag-shopping"></i></a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="thumb">
+                        <a href=""><img src="./assets/images/trending-03.jpg" alt=""></a>
+                        <div class="price"><em>$64</em>$44</div>
+                    </div>
+                    <div class="down-content">
+                        <span class="category">Action</span>
+                        <h4>Assasin Creed</h4>
+                        <a href=""><i class="fa-solid fa-bag-shopping"></i></a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="thumb">
+                        <a href=""><img src="./assets/images/trending-04.jpg" alt=""></a>
+                        <div class="price">$32</div>
+                    </div>
+                    <div class="down-content">
+                        <span class="category">Action</span>
+                        <h4>Assasin Creed</h4>
+                        <a href=""><i class="fa-solid fa-bag-shopping"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- ------------------SECTION-03-Most played--------------- -->
+        <section class="most-played">
+            <div class="most-played-container">
+                <div class="most-played-heading">
+                    <div class="most-played-left">
+                        <h6>top games</h6>
+                        <h2>most played</h2>
+                    </div>
+                    <div class="most-played-right">
+                        <div> view all</div>
+                    </div>
+                </div>
+                <div class="explore">
+                    <div>
+                        <div class="image-div"><img src="./assets/images/top-game-01.jpg" alt=""></div>
+                        <div class="explore-down-content">
+                            <span>Adventure</span>
+                            <h4>Assasin Creed</h4>
+                            <div>Explore</div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="image-div"><img src="./assets/images/top-game-02.jpg" alt=""></div>
+                        <div class="explore-down-content">
+                            <span>Adventure</span>
+                            <h4>Assasin Creed</h4>
+                            <div>Explore</div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="image-div"><img src="./assets/images/top-game-03.jpg" alt=""></div>
+                        <div class="explore-down-content">
+                            <span>Adventure</span>
+                            <h4>Assasin Creed</h4>
+                            <div>Explore</div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="image-div"><img src="./assets/images/top-game-04.jpg" alt=""></div>
+                        <div class="explore-down-content">
+                            <span>Adventure</span>
+                            <h4>Assasin Creed</h4>
+                            <div>Explore</div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="image-div"><img src="./assets/images/top-game-05.jpg" alt=""></div>
+                        <div class="explore-down-content">
+                            <span>Adventure</span>
+                            <h4>Assasin Creed</h4>
+                            <div>Explore</div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+
+            </div>
+        </section>
+
+        <!-- ---------------------SECTION-04-CATEGORY-------------------- -->
+        <section class="section-category">
+            <div class="category-heading">
+                <h6>categories</h6>
+                <h2>top categories</h2>
+            </div>
+            <div class="category-items">
+                <div>
+                    <h4>Action</h4>
+                    <div><img src="./assets/images/categories-01.jpg" alt=""></div>
+                </div>
+                <div>
+                    <h4>Action</h4>
+                    <div><img src="./assets/images/categories-05.jpg" alt=""></div>
+                </div>
+                <div>
+                    <h4>Action</h4>
+                    <div><img src="./assets/images/categories-03.jpg" alt=""></div>
+                </div>
+                <div>
+                    <h4>Action</h4>
+                    <div><img src="./assets/images/categories-04.jpg" alt=""></div>
+                </div>
+                <div>
+                    <h4>Action</h4>
+                    <div><img src="./assets/images/categories-05.jpg" alt=""></div>
+                </div>
+
+            </div>
+
+        </section>
+        <!-- =============SECTION-05-SHOP=============== -->
+        <section class="section-shop">
+            <div><img src="./assets/images/cta-bg.jpg" alt=""></div>
+            <div>
+                <div>
+                    <h6>our shop</h6>
+                    <h2>Go Pre-Order Buy & Get Best <em>Prices</em> For You!</h2>
+                    <p>Lorem ipsum dolor consectetur adipiscing, sed do eiusmod tempor incididunt.</p>
+                    <div>shop now</div>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <h6>newsletter</h6>
+                    <h2>Get Up To $100 Off Just Buy <em> Subscribe</em> Newsletter!</h2>
+                    <form action=""><input type="email" placeholder="Your email..."></form>
+                    <button>subscribe now</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- =============FOOTER============== -->
+        <footer>
+            <div class="footer-container">
+                <div class="footer">
+                    <img src="./assets/images/footer-bg.jpg" alt="">
+                    <div class="content">
+                        <p>Copyright © 2048 LUGX Gaming Company. All rights reserved. &nbsp;&nbsp; <a href="">Design:
+                                TemplateMo</a></p>
+                    </div>
+
+                </div>
+
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,12 @@
+<script>
+    function checkVote(checkVote){
+var  age=prompt("Enter age");
+checkVote(age);
+    }
+    checkVote(function(age){
+        if(age>18)
+        document.write("Eligible for vote ");
+    else
+    document.write("Not elligible for vote ");
+    })
+</script>

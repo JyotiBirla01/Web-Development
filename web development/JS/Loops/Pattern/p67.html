@@ -1,0 +1,20 @@
+<!-- Q.67 Write a program to print the following star
+triangle structure:
+* * * * * * * * *
+  * * * * * * *
+    * * * * *
+      * * *
+        * -->
+<pre>
+<script>
+    for (let i = 5; i >= 1; i--) {
+        for(let j=1; j<=5-i; j++){
+document.write(" ");
+        }
+        for (let j = 1; j <= (2 * i) - 1; j++) {
+            document.write("*");
+        }
+        document.write("<br>");
+    }
+</script>
+</pre>

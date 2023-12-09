@@ -1,0 +1,13 @@
+<!-- Call Back Function  -->
+<script>
+
+    function addition(a,b ,callback){
+        var result=a+b;
+        document.write(result);
+        callback(result);
+    }
+    addition(20,11,function(n){
+        n%2?document.write("<br> Odd"):document.write("<br> Even");
+    });
+
+</script>

@@ -1,0 +1,29 @@
+<!-- 49)	WAP to find out all the perfect numbers between two entered numbers -->
+
+<script>
+    let n1= parseInt(prompt("Enter the starting number "));
+    let n2= parseInt(prompt("Enter the ending  number "));
+    let i,j,sum=0,temp;
+    function printTable(n1,n2){
+for( i=n1; i<=n2; i++){
+     temp=i;
+     sum=0;
+    for( j=1; j<=parseInt(i/2); j++){
+
+        if(i%j==0)
+        sum+=j;
+       
+        
+    }
+    if(sum==temp)
+document.write(i+" Perfect Number <br>");
+else
+document.write(i+" Not Perfect <br>");
+
+}
+
+
+
+    }
+    printTable(n1,n2)
+</script>

@@ -1,0 +1,18 @@
+<!-- 41)	WAP to find out LCM of a number -->
+<script>
+     let a= parseInt(prompt("Enter the first  number "));
+     let b= parseInt(prompt("Enter the second  number "));
+     function lcm(a,b){
+        let gcd = 1, lcm = 1;
+        for (let i = 1; i <= a; i++) {
+            if (a % i == 0 && b % i == 0)
+                lcm = i;
+            lcm = (a * b) / lcm;
+
+        }
+        document.write("LCM is " + lcm);
+    }
+        
+
+     lcm(a,b);
+</script>

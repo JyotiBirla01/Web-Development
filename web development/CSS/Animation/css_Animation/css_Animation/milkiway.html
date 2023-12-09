@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url("image/space.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .Space {
+            box-sizing: border-box;
+            /* border: 1px solid black; */
+            background: transparent;
+            height: 1050px;
+            width: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .Sun {
+            background-image: url("image/sun.jpg");
+            background-size: cover;
+            background-position: 50%;
+            box-sizing: border-box;
+            background-color: orange;
+            box-shadow: 0px 0px 50px rgb(255, 166, 0);
+            height: 300.696342px;
+            border-radius: 50%;
+            width: 300.696342px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation-name: animo;
+            animation-duration: 20s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        .Mercury {
+            box-sizing: border-box;
+            position: absolute;
+            /* border: 1px solid red; */
+            height: 10px;
+            width: 340px;
+            animation-name: animo;
+            animation-duration: 7.6032000s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        .Venus {
+            box-sizing: border-box;
+            position: absolute;
+            /* border: 1px solid green; */
+            height: 15px;
+            width: 390px;
+            animation-name: animo;
+            animation-duration: 1.9440000s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        .Earth {
+            box-sizing: border-box;
+            position: absolute;
+            /* border: 1px solid blue; */
+            height: 18px;
+            width: 440px;
+            animation-name: animo;
+            animation-duration: 3.1536000s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        .moon {
+            box-sizing: border-box;
+            position: absolute;
+            top: 8px;
+            right: -1px;
+            height: 2px;
+            width: 20px;
+            animation-name: animo;
+            animation-duration: 1s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        .Mars {
+            box-sizing: border-box;
+            /* border: 1px solid brown; */
+            position: absolute;
+            height: 12px;
+            width: 480px;
+            animation-name: animo;
+            animation-duration: 5.9353200s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        .Jupiter {
+            box-sizing: border-box;
+            /* border: 1px solid skyblue; */
+            position: absolute;
+            height: 69.911px;
+            width: 650px;
+            animation-name: animo;
+            animation-duration: 37.4235360s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        .Saturn {
+            box-sizing: border-box;
+            /* border: 1px solid rgb(208, 92, 92); */
+            height: 58.232px;
+            position: absolute;
+            width: 800px;
+            animation-name: animo;
+            animation-duration: 92.8252800s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        .Uranus {
+            box-sizing: border-box;
+            /* border: 1px solid gray; */
+            height: 25.362px;
+            width: 900px;
+            position: absolute;
+            animation-name: animo;
+            animation-duration: 265.6248000s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        .Neptune {
+            box-sizing: border-box;
+            /* border: 1px solid yellow; */
+            position: absolute;
+            height: 24.622px;
+            width: 1000px;
+            animation-name: animo;
+            animation-duration: 520.1497600s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        .m {
+            background-image: url("image/mercury.webp");
+            background-size: cover;
+            background-position: 56% -30%;
+            box-sizing: border-box;
+            border-radius: 50%;
+            position: absolute;
+            background-color: red;
+            box-shadow: 0px 0px 2px rgb(214, 203, 181);
+            height: 10px;
+            width: 10px;
+            animation-name: animo;
+            animation-duration: 2s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        .v {
+            background-image: url("image/Venus.webp");
+            background-size: 22px;
+            background-repeat: no-repeat;
+            background-position: -3.5px;
+            box-sizing: border-box;
+            position: absolute;
+            border-radius: 50%;
+            background-color: green;
+            box-shadow: 0px 0px 2px rgb(234, 126, 126);
+            height: 15px;
+            width: 15px;
+            animation-name: animo;
+            animation-duration: 4s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        .e {
+            background-image: url("image/earth.jpg");
+            background-size: cover;
+            background-position: 56% -30%;
+            box-sizing: border-box;
+            border-radius: 50%;
+            position: absolute;
+            background-color: rgb(51, 157, 219);
+            box-shadow: 0px 0px 3px rgb(41, 177, 235);
+            height: 18px;
+            width: 18px;
+            animation-name: animo;
+            animation-duration: 10s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        .mo {
+            box-sizing: border-box;
+            background-image: url("image/moon.jpg");
+            box-shadow: 0px 0px 2px 2px rgb(230, 222, 222);
+            background-repeat: no-repeat;
+            background-size: 180%;
+            background-position: 60%;
+            position: absolute;
+            top: 8px;
+            right: -3.5px;
+            height: 2px;
+            width: 2px;
+            background-color: #fff;
+            border-radius: 50%;
+        }
+
+        .ma {
+            background-image: url("image/mars.png");
+            box-shadow: 0px 0px 3px rgb(255, 186, 96);
+            background-size: cover;
+            background-position: 0%;
+            box-sizing: border-box;
+            position: absolute;
+            border-radius: 50%;
+            background-color: brown;
+            height: 12px;
+            width: 12px;
+            animation-name: animo;
+            animation-duration: 8s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        .j {
+            background-image: url("image/Jupiter.webp");
+            background-repeat: no-repeat;
+            box-shadow: 0px 0px 8px rgb(255, 173, 57);
+            background-size: 160%;
+            background-position: 53% 35%;
+            box-sizing: border-box;
+            position: absolute;
+            background-color: skyblue;
+            border-radius: 50%;
+            height: 69.911px;
+            width: 69.911px;
+            animation-name: animo;
+            animation-duration: 10s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        .sa {
+            background-image: url("image/saturn.jpg");
+            background-repeat: no-repeat;
+            box-shadow: 0px 0px 7px rgb(241, 196, 133);
+            background-size: 160%;
+            background-position: 53% 35%;
+            box-sizing: border-box;
+            border-radius: 50%;
+            background-color: pink;
+            height: 58.232px;
+            position: absolute;
+            width: 58.232px;
+            animation-name: animo;
+            animation-duration: 7s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        .u {
+            box-shadow: 0px 0px 4px rgb(67, 236, 255);
+            background-image: url("image/uranus.webp");
+            background-repeat: no-repeat;
+            background-size: 180%;
+            background-position: 50% 50%;
+            box-sizing: border-box;
+            background-color: gray;
+            height: 25.362px;
+            width: 25.362px;
+            position: absolute;
+            border-radius: 50%;
+            animation-name: animo;
+            animation-duration: 4s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        .n {
+            box-shadow: 0px 0px 4px rgb(67, 236, 255);
+            background-image: url("image/neptune.jpg");
+            background-repeat: no-repeat;
+            background-size: 180%;
+            background-position: 50% 50%;
+            box-sizing: border-box;
+            position: absolute;
+            border-radius: 50%;
+            background-color: yellow;
+            height: 24.622px;
+            width: 24.622px;
+            animation-name: animo;
+            animation-duration: 2s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes animo {
+            100% {
+                rotate: 360deg;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="Space">
+        <div class="Sun">
+            <div class="s"></div>
+        </div>
+        <div class="Mercury">
+            <div class="m"></div>
+        </div>
+        <div class="Venus">
+            <div class="v"></div>
+        </div>
+        <div class="Earth">
+            <div class="e">
+                <div class="moon">
+                    <div class="mo"></div>
+                </div>
+            </div>
+        </div>
+        <div class="Mars">
+            <div class="ma"></div>
+        </div>
+        <div class="Jupiter">
+            <div class="j"></div>
+        </div>
+        <div class="Saturn">
+            <div class="sa"></div>
+        </div>
+        <div class="Uranus">
+            <div class="u"></div>
+        </div>
+        <div class="Neptune">
+            <div class="n"></div>
+        </div>
+    </div>
+</body>
+
+</html>

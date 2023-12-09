@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url("image/space.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: grid;
+            place-items: center;
+        }
+
+        .space {
+            height: 700px;
+            width: 700px;
+            display: grid;
+            place-items: center;
+        }
+
+        .sun {
+            background-image: url("image/sun.jpg");
+            background-size: cover;
+            background-position: -32px;
+            border-radius: 50%;
+            height: 130px;
+            width: 130px;
+            position: absolute;
+            box-shadow: 0px 0px 30px 10px rgb(230, 186, 104);
+            animation-name: animation;
+            animation-duration: 15s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+
+        }
+
+        .earth {
+            height: 50px;
+            width: 400px;
+            position: absolute;
+            animation-name: animation;
+            animation-duration: 10s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        .moon {
+            position: absolute;
+            top: -100%;
+            left: 17%;
+            width: 30px;
+            height: 150px;
+            animation-name: animation;
+            animation-duration: 5s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        .e {
+            background-image: url("image/earth.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: -21px;
+            box-shadow: 0px 0px 30px 3px rgb(68, 119, 236);
+            height: 100%;
+            width: 50px;
+            border-radius: 50%;
+            position: absolute;
+        }
+
+        .m {
+            box-shadow: 0px 0px 20px 2px rgb(165, 165, 165);
+            background-image: url("image/moon.jpg");
+            background-repeat: no-repeat;
+            background-size: 100px;
+            background-position: -30px;
+            height: 30px;
+            border-radius: 50%;
+            width: 100%;
+        }
+
+        @keyframes animation {
+            100% {
+                rotate: 360deg;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section class="space">
+        <div class="sun"></div>
+        <div class="earth">
+            <div class="e">
+                <div class="moon">
+                    <div class="m"></div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</body>
+
+</html>

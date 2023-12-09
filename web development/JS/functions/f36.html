@@ -1,0 +1,37 @@
+<!-- 2)	WAP to print all the strong numbers between two entered numbers -->
+<pre>
+<script>
+    let n1 = parseInt(prompt("Enter the first  number "));
+    let n2 = parseInt(prompt("Enter the second number"));
+    function strong(n1, n2) {
+        let rem, n;
+        for (let i = n1; i <= n2; i++) {
+            n = i;
+            temp = n;
+          let fact = 1,sum=0;
+            while (n != 0) {
+                sum=0;
+                fact=1;
+                rem = parseInt(n % 10);
+                for (let j = 1; j<=rem; j++) {
+                    fact *= j;
+                   
+                    sum=sum+fact;
+                    
+                }
+                document.write(fact+"-------------");
+                document.write(sum+"***********");   
+               
+                n = parseInt(n / 10);
+
+            }
+          
+            if (sum == temp)
+                document.write(sum + " is armstrong number ");
+        }
+
+    }
+    strong(n1, n2);
+
+</script>
+</pre>

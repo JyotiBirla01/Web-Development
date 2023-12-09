@@ -1,0 +1,20 @@
+<!-- Q.68 Write a program to print the following number
+rectangle program:
+1234
+2341
+3412
+4123 -->
+<script>
+    let k = 1;
+    for (let i = 1; i <= 4; i++) {
+        for (let j = 1; j <= 4; j++) {
+            if (i==j)
+                document.write(i);
+            else if((i+j)==5)
+                document.write(j);
+            else
+            document.write("");
+        }
+        document.write("<br>");
+    }
+</script>

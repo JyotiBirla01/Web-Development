@@ -1,0 +1,25 @@
+<!-- 50)	WAP to find out all the palindrome numbers between two entered numbers -->
+
+<script>
+   let n1 = parseInt(prompt("Enter the  starting number "));
+    let n2 = parseInt(prompt("Enter the  ending number "));
+    function reverse(n1,n2) {
+        let rem,n;
+        for (let i = n1; i <= n2; i++) {
+           var rev = 0;
+           n = i;
+            while (n != 0) {
+                rem = parseInt(n % 10);
+                rev = rev * 10 + rem;
+                n = parseInt(n / 10);
+
+            }
+            
+            // document.write(rev+" "); 
+            if(rev==n)    
+            document.write(rev+ " is Pallindrome ");
+      
+        }
+    }
+    reverse(n1,n2);
+   </script>

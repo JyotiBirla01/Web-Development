@@ -1,0 +1,32 @@
+<!-- 2)	WAP to print all the strong numbers between two entered numbers -->
+<pre>
+<script>
+    let start = parseInt(prompt("Enter  first the number "));
+    let end = parseInt(prompt("Enter  second the number "));
+    let rem, n;
+        let sum;
+        let i, p;
+        for (i = start, n = 0; i <= end; i++) {
+            n = i;
+            p = n;
+            sum = 0;
+
+            while (n != 0) {
+                let fact = 1;
+                rem = parseInt(n % 10);
+                for (let j = 1; j <= rem; j++) {
+                    fact = fact * j;
+                }
+                sum = sum + fact;
+
+                n = parseInt(n / 10); 
+
+            }
+
+            if (sum == p)
+                System.out.println(p + "  is  strong number ");
+
+        }
+
+</script>
+</pre>

@@ -1,0 +1,21 @@
+<!-- Q.10 Write a program to cyclically rotate array by one. -->
+<script>
+    let arr = [];
+    let n = parseInt(prompt("Enter the size of array "));
+    for (let i = 0; i < n; i++) {
+        arr[i] = parseInt(prompt("Enter the " + (i + 1) + "element "));
+    }
+    let k = parseInt(prompt("Enter the value of k"));
+    let temp = [];
+let j=0;
+    for (let i = n - k; i < n; i++) {
+        temp[j++] = arr[i];
+
+    }
+    for (let i = 0; i < n - k; i++) {
+        temp[j++] = arr[i];
+    }
+    for (let i = 0; i < temp.length; i++) {
+        document.write(temp[i]);
+    }
+</script>

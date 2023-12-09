@@ -1,0 +1,16 @@
+<!-- 45)	WAP to find out the sum of all the digits of a number --> 
+<script>
+    let n= parseInt(prompt("Enter the number "));
+    let rem,sum=0;
+function findSum(n){
+    while(n!=0){
+ rem=parseInt(n%10);
+ sum+=rem;
+ n=parseInt(n/10);
+
+    }
+    document.write(sum);
+}
+findSum(n);
+
+</script>

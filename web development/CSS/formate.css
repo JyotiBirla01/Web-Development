@@ -1,0 +1,9 @@
+body{
+    background-color: blue;
+}
+.header-area img {
+    height: 100px;
+    width: 100%;
+    background-color: brown;
+    
+}

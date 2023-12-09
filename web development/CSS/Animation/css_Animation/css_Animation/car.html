@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin-top: 50px;
+        }
+
+        .car {
+            background-image: url("image/car.webp");
+            background-size: 390px;
+            background-repeat: no-repeat;
+            background-position: -30px -64px;
+            /* border: 1px solid red; */
+            height: 100px;
+            width: 300px;
+            position: absolute;
+            animation-name: car;
+            animation-duration: 5s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        .t {
+            background-image: url("image/tayer.webp");
+            background-size: 66.7px;
+            background-repeat: no-repeat;
+            background-position: -8.4px -1.5px;
+            /* border: 1px solid rgb(0, 0, 0); */
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            float: left;
+            margin-top: 47px;
+            margin-left: 20px;
+            animation-name: t;
+            animation-duration: 3s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        .t2 {
+            margin-left: 139px;
+        }
+
+        @keyframes car {
+            0% {
+                left: 0%;
+            }
+
+            100% {
+                left: 100%;
+            }
+        }
+
+        @keyframes t {
+            0% {
+                rotate: 0deg;
+            }
+
+            100% {
+                rotate: 360deg;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="car">
+        <div class="t1 t"></div>
+        <div class="t2 t"></div>
+    </div>
+</body>
+
+</html>

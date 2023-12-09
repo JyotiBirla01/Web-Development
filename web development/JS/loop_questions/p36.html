@@ -1,0 +1,13 @@
+<!-- 36)	WAP to reverse a number -->
+<script>
+    let rev = 0;
+    let n = parseInt(prompt("Enter the number "));
+    while (n != 0) {
+        rem =  parseInt( n % 10);
+        rev=rev*10+rem;
+        n = parseInt( n / 10);
+        
+    }
+    document.write(rev);
+
+</script>

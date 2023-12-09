@@ -1,0 +1,84 @@
+body {
+    background-color: red;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Poppins, sans-serif;
+}
+
+.home {
+    height: 120vh;
+    width: 98vw;
+    background-image: url(./templatemo_589_lugx_gaming/assets/images/banner-bg.jpg);
+    border: 1px solid red;
+}
+
+.header-area {
+    height: 350px;
+    width: auto;
+    border: 1px solid black;
+    display: block;
+    position: relative;
+
+}
+
+.logo {
+    height: 30px;
+    width: 30%;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 35%;
+
+}
+
+.menu {
+    height: 30px;
+    width: 70%;
+    border: 1px solid white;
+
+    position: absolute;
+    left: 15%;
+    top: 88px;
+
+}
+
+.menu ul {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu ul li {
+    list-style: none;
+
+
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    padding: 10px 20px 10px 20px;
+    border: 1px solid red;
+    border-radius: 19px;
+
+}
+
+.menu ul li:nth-child(1) a {
+    background-color: #0a58ca;
+}
+
+.menu ul li:nth-child(5) a {
+    background-color: #ee626b;
+}
+
+.menu ul li a:hover {
+    background-color: #0a58ca;
+}

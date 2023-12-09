@@ -1,0 +1,16 @@
+<script>
+    let arr=[];
+    let n=parseInt(prompt("Enter the size of array "));
+    for(let i=0;  i<n; i++){
+        arr[i]= parseInt(prompt("Enter the "+(i+1)+"  elements "));
+    }
+   
+ function array(arr,callback){
+         callback(arr);
+    }
+    array(arr,function(x){
+        for(let element of x)
+        document.write(element+"<br>");
+    });
+
+</script>

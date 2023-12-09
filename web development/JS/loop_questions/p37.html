@@ -1,0 +1,17 @@
+<!-- 37)	WAP to check whether entered number is palindrome or not -->
+<script>
+    let n = parseInt(prompt("Enter the number "));
+    let rev = 0, rem;
+    let temp = n;
+    while (n != 0) {
+        rem = parseInt(n%10);
+        rev = rev * 10 + rem;
+        n = parseInt(n / 10);
+
+    }
+
+    if (rev == temp)
+        document.write("Pallindrome");
+    else
+        document.write("Not Pallindrome");
+</script>

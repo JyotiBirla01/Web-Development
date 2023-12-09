@@ -1,0 +1,10 @@
+<script>
+    function f1() {
+        document.write("F2 excuted ");
+        return [200, 300];
+        document.write("After return "); //it will not executed because it is written after return  statement 
+
+    }
+    var result = f1();
+    document.write(result);
+</script>

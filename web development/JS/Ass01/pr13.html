@@ -1,0 +1,45 @@
+<!-- Q.12 Find common elements in three sorted arrays.
+Given three arrays sorted in increasing order. Find the elements that are common in all three arrays.
+Note: can you take care of the duplicates without using any additional Data Structure?
+Example 1:
+Input:
+n1 = 6; A = {1, 5, 10, 20, 40, 80}
+n2 = 5; B = {6, 7, 20, 80, 100}
+n3 = 8; C = {3, 4, 15, 20, 30, 70, 80, 120}
+Output: 20 80
+Explanation: 20 and 80 are the only
+common elements in A, B and C. -->
+<script>
+    let a=[1,5,10,20,40,80];
+    let b=[6,7,20,80,100];
+    let c=[3,4,15,20,30,70,80,120];
+    let n1= a.length;
+   let n2=b.length;
+    let n3=c.length;
+   
+
+    // for(let index of n1){
+    //     document.write(index );
+    //     document.writeln();
+    // }
+   
+    let i=0,j=0,k=0;
+    document.write("Common element is ");
+        while(i<n1 && j<n2 && k<n3){
+            if(a[i]==b[j] && b[j]==c[k]){
+           document.write(a[i]+" ,");
+                i++;
+                j++;
+                k++;
+
+            }
+            else if(a[i]>b[j])
+                j++;
+            else if(b[j]>c[k])
+            k++;
+            else
+            i++;
+        }
+
+    
+</script>

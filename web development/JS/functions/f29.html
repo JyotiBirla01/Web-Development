@@ -1,0 +1,14 @@
+<!-- 47)	WAP to print tables of all the numbers between two entered numbers -->
+<script>
+    let n1= parseInt(prompt("Enter the starting number "));
+    let n2= parseInt(prompt("Enter the ending  number "));
+    function printTable(n1,n2){
+for(let i=n1; i<=n2; i++){
+    for(let j=1; j<=10; j++){
+        document.write(i+" * "+j+" = " +i*j+" "+"<br>");
+        
+    }
+}
+    }
+    printTable(n1,n2)
+</script>

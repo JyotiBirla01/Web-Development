@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template -04</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+   <link rel="stylesheet" media="screen and (max-width:1025px) " href="formate.css" >
+   <style>
+        /* ===========HEADER========== */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Poppins, sans-serif;
+        }
+
+        .header-area {
+            height: 100px;
+            width: 100%;
+            /* background: linear-gradient(-145deg, rgba(219, 138, 222, 1) 0%, rgba(246, 191, 159, 1) 100%) !important; */
+            border: 1px solid blue;
+            
+        }
+
+        .header-area img {
+            height: 100px;
+            width: 100%;
+            
+        }
+
+        .main-nav {
+            position: absolute;
+            top: 20px;
+            left: 110px;
+            height: 80px;
+            width: 1120px;
+            border: 1px solid red;
+            display: flex;
+        }
+
+        .main-nav a img {
+            height: 50px;
+            width: 160px;
+            border: 1px solid red;
+        }
+
+        .main-menu {
+            height: 30px;
+            width: 680px;
+            display: flex;
+            justify-content: center;
+            justify-content: space-between;
+            position: absolute;
+            left: 400px;
+            border: 1px solid green;
+
+        }
+
+        .main-menu li {
+
+            border: 1px solid blue;
+            list-style: none;
+            color: white;
+        }
+
+        .main-menu a {
+            text-decoration: none;
+            color: white;
+            font-size: 14px;
+            font-weight: 400;
+            letter-spacing: 1px;
+        }
+
+        .main-menu a:hover{
+           opacity: 0.6;
+           transition: all 1s;
+        }
+
+        .sub-menu {
+            background-color: aqua;
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+            height: 100px;
+            width: 140px;
+            align-items: start;
+            justify-content: center;
+            padding-left: 10px;
+            /* justify-content: center; */
+            /* visibility: hidden; */
+            display: none;
+            overflow: hidden;
+            position: relative;
+        }
+
+        
+
+        .sub-menu li a {
+            color: rgb(80, 78, 78) !important;
+            font-size: 14px;
+        }
+
+        .main-menu > li:nth-child(4):hover  .sub-menu {
+            display: block;
+            font-size: 33px;
+            background-color: red;
+        }
+
+        /* ===========SECTION-MAIN-BANNER */
+        .main-banner-container {
+            height: 900px;
+            width: 100%;
+            border: 1px solid red;
+        }
+
+        .main-text {
+            height: 500px;
+            width: 500px;
+            position: absolute;
+            left: 120px;
+            top: 240px;
+            border: 1px solid green;
+        }
+
+        .main-text h6 {
+            margin: 0;
+            padding: 0;
+            font-size: 17px;
+            font-weight: 500;
+            text-transform: capitalize;
+            color: #777777;
+        }
+
+        .main-text h2 {
+            margin: 0;
+            padding: 0;
+            font-size: 60px;
+            color: #111111;
+            font-weight: 800;
+            line-height: 74px;
+            text-transform: capitalize;
+            margin-top: 20px;
+            /* z-index: 2 !important; */
+
+        }
+
+        .main-text em {
+            font-style: normal;
+            color: #dc8cdb;
+            z-index: -1 !important;
+            border: 1px solid blue;
+        }
+
+        .main-button div a {
+            text-decoration: none;
+            font-size: 13px;
+            color: #fff;
+            background: linear-gradient(-145deg, rgba(219, 138, 222, 1) 0%, rgba(246, 191, 159, 1) 100%);
+            position: absolute;
+            bottom: 165px;
+            padding: 12px 30px;
+            border-radius: 5px;
+            font-weight: 500;
+            text-transform: uppercase;
+            transition: all .3s;
+            z-index: 2;
+        }
+        .main-button div a:hover {
+opacity: 0.9;
+        }
+
+        .banner-left-dec img {
+            border: 1px solid red;
+            position: relative;
+            right: 120px;
+            top: -70px;
+            z-index: -1 !important ;
+        }
+        .right-image img:nth-child(1){
+            border: 1px solid blue;
+
+            position: absolute;
+            left: 980px;
+           top: 170px;
+            height: 350px;
+            width: 350px;
+            
+        }
+        .right-image img:nth-child(2){
+            border: 1px solid red;
+            position: absolute;
+            left: 800px;
+           top: 170px;
+            height: 450px;
+            width: 450px;
+        }
+        /* -----------------SERVICES----------------- */
+        .services-container{
+            height: 700px;
+            width: 100%;
+            border: 1px solid blue;
+            justify-content: center;
+            text-align: center;
+           margin-top: -270px;
+
+            
+        }
+.services-container h6{
+    margin: 0;
+        font-size: 12px;
+    text-transform: uppercase;
+    color: #7a7a7a;
+    font-weight: 600;
+  
+}
+.services-container h4{
+    margin-top: 10px;
+        font-size: 28px;
+    text-transform: capitalize;
+ font-weight: 800;
+ color: #111;
+
+}
+.services-container h4 em{
+     font-style: normal;
+     color: #dc8cdb;
+}
+.item{
+    border-radius: 15px;
+    text-align: center;
+    padding: 50px 30px;
+    margin: 15px;
+    transition: all 1.3s;
+    border: 1px solid cyan;
+
+}
+    </style>
+</head>
+
+<body>
+    <!-- ------------HEADER---------------- -->
+    <header class="header-area">
+        <img src="./templatemo_573_eduwell/templatemo_573_eduwell/assets/images/header-bg.png" alt="" style="display: block;">
+        <nav class="main-nav">
+            <!-- *******EDUWELL LOGO********** -->
+            <a href=""><img  src="./templatemo_573_eduwell/templatemo_573_eduwell/assets/images/templatemo-eduwell.png"
+                    alt="" style="display: block;"></a>
+            <!-- ********MENU********** -->
+            <ul class="main-menu">
+                <li><a href="">Home</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Courses</a></li>
+                <li><a href="">Pages</a><i class="fa-solid fa-angle-down fa-2xs"></i>
+                    <ul class="sub-menu">
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Our Services</a></li>
+                        <li><a href="">Contact Us</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Testimonials</a></li>
+                <li><a href="">Contact Us</a></li>
+            </ul>
+
+        </nav>
+
+    </header>
+    <!-- ---------SECTION MAIN-BANNER -->
+    <section class="main-banner">
+        <div class="main-banner-container">
+            <div class="main-text">
+                <h6>welcome to our school</h6>
+                <h2>best place to learn graphic <em>design!</em></h2>
+                <div class="main-button">
+                    <div><a href="">join us now</a></div>
+                </div>
+                <div class="banner-left-dec"><img
+                        src="./templatemo_573_eduwell/templatemo_573_eduwell/assets/images/banner-left-dec.png" alt="">
+                </div>
+            </div>
+            <div class="right-image">
+                <img src="./templatemo_573_eduwell/templatemo_573_eduwell/assets/images/banner-right-dec.png" alt="">
+                <img src="./templatemo_573_eduwell/templatemo_573_eduwell/assets/images/banner-right-image.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- --------------SECTION-SERVICES----------------- -->
+    <section class="services">
+        <div class="services-container">
+            <div class="section-heading">
+<h6>our services</h6>
+<h4>Provided <em>Services</em></h4>
+        </div>
+
+        <div class="item">
+            <div class="service-item">
+                <div class="icon">
+                    <img src="./templatemo_573_eduwell/templatemo_573_eduwell/assets/images/service-icon-01.png" alt="">
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </section>
+
+</body>
+
+</html>

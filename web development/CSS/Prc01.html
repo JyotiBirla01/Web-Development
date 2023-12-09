@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Poppins, sans-serif;
+
+    }
+
+    .first {
+      height: 650px;
+
+    }
+
+    .left {
+      width: 55%;
+      background-color: #343a40;
+      height: 100%;
+      float: left;
+      box-sizing: border-box;
+    }
+
+    .right {
+      width: 45%;
+      height: 100%;
+      float: left;
+      background-color: #1CBBB4;
+    }
+
+    .header {
+
+      padding: 15px;
+      height: 10%;
+      box-sizing: border-box;
+    }
+
+    .header img {
+
+      width: 50px;
+      height: 50px;
+    }
+
+    .header span {
+
+      color: white;
+      font-weight: bolder;
+      font-size: 25px;
+      margin-left: 10px;
+
+      margin-top: -10px;
+      display: block;
+      margin-top: -54px;
+      margin-left: 65px;
+    }
+
+    .left-main-content {
+
+      height: 70%;
+    }
+
+    .content {
+
+      width: 70%;
+      height: 70%;
+
+      margin: 100px auto;
+    }
+
+    .content p:nth-child(1) {
+
+      top: 70px;
+      height: 80%;
+      width: 70%;
+      color: white;
+
+      margin-left: 5px;
+      font-size: 40px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .content p:nth-child(2) {
+      color: white;
+      font-size: 20px;
+    }
+
+    .content div {
+      display: inline;
+
+    }
+
+
+    .btn1 {
+      height: 40px;
+      width: 150px;
+      background: #ff4f5a;
+      ;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+      color: white;
+    }
+
+    .btn2 {
+      height: 40px;
+      width: 150px;
+      background: white;
+      color: #1a2e35;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .btn1:hover {
+      background: #343a40;
+      color: #ff4f5a;
+      ;
+      border: 1px solid #FF4F5A;
+    }
+
+    .btn2:hover {
+      background-color: #343a40;
+      color: white;
+      border: 1px solid white;
+      text-align: right;
+    }
+
+    .right img {
+      float: right;
+      height: 25px;
+      width: 25px;
+      margin: 25px;
+    }
+
+   
+    .right div img {
+      padding: 100px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 400px;
+      height: 400px;
+    }
+
+    .leftII {
+      width: 35%;
+      background-color: rgb(215, 53, 53);
+      height: 100%;
+      float: left;
+      box-sizing: border-box;
+      padding: 40px;
+    }
+
+    .rightII {
+      width: 65%;
+      height: 100%;
+      float: left;
+      background-color: rgb(12, 12, 207);
+    }
+
+    .rightcontent div {
+      display: inline-block;
+
+
+    }
+
+    .right-main-content {
+
+      height: 100%;
+    }
+
+    .rightcontent {
+      padding: 70px;
+      font-size: 20px;
+      width: 90%;
+
+      height: 100%;
+      
+      margin: 100px auto;
+    }
+
+    .IIbtn1 {
+      height: 40px;
+      width: 150px;
+      background: #ff4f5a;
+      
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+      color: white;
+    }
+
+    .IIbtn2 {
+      height: 40px;
+      width: 150px;
+      background: black;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .IIbtn1:hover {
+      background: white;
+      color: #ff4f5a;
+      ;
+      border: 1px solid #FF4F5A;
+    }
+
+    .IIbtn2:hover {
+      background-color: white;
+      color: black;
+      border: 1px solid black;
+      text-align: right;
+    }
+
+    .leftIII {
+      width: 100%;
+      background-color: #1CBBB4;
+      height: 100%;
+
+
+    }
+
+    .images div {
+      display: inline-block;
+      margin: 40px;
+      padding: 40px;
+      color: white;
+     
+
+      font-size: 20px;
+
+
+    }
+
+    .PageIV {
+      width: 100%;
+      height: 100%;
+    }
+
+    .action {
+
+      padding-top: 50px;
+      padding-left: 250px;
+      margin-left: auto;
+      margin-right: auto;
+      /* width: 400px;
+      height: 400px; */
+    }
+
+    .PageIV div h1 {
+
+      /* padding-left:150px ; */
+      margin-left: 400PX;
+      font-size: 40px;
+     
+    }
+
+    .PageIV div p {
+      padding-left: 30px;
+      padding-right: 30px;
+      font-size: 20px;
+     
+    }
+
+    .PageIV div button {
+      position: relative;
+      left: 600px;
+      height: 40px;
+      width: 150px;
+      background: #ff4f5a;
+      color: white;
+      
+      border: none;
+      float: left;
+
+    }
+
+    .PageIV div button:hover {
+      background: white;
+      color: #ff4f5a;
+      border: 1px solid #ff4f5a;
+
+    }
+
+    .a {
+      height: 100%;
+      width: 100%;
+      padding: 90px;
+      position: relative;
+      left: 50px;
+      font-size: 30px;
+      
+    }
+
+    .leftV {
+      width: 50%;
+      background-color: white;
+      height: 1000%;
+      float: left;
+      box-sizing: border-box;
+
+    }
+    .left-main-contentV {
+
+height: 100%;
+
+}
+
+.contentV {
+
+width: 100%;
+height: 100%;
+
+margin: 100px auto;
+}
+
+    .rightV {
+      width: 50%;
+      height: 100%;
+      float: left;
+      /* background-color: #1CBBB4; */
+
+    }
+
+    .contentV p {
+      font-size: 25px;
+     
+      text-align: center;
+      margin: 0px;
+
+    }
+
+    .contentV {
+      display: inline-block;
+
+    }
+
+    .details {
+      height: 100px;
+      width: 100px;
+      border-radius: 50%;
+      background: #343a40;
+      display: inline-block;
+      margin: 55px;
+      
+
+    }
+
+   
+
+    .c1 img {
+      padding-top: 25%;
+      position: relative;
+      left: 20px;
+    }
+   
+
+    .detail-box{
+      display: inline-block;
+      
+      width: 70%;
+    }
+    .detail-box h5{
+     /* margin-left: 30px;
+     margin-bottom: 30px; */
+     margin: 25px;
+      display: inline;
+      color:#ff4f5a;
+      font-size: 20px;
+     
+    }
+    .detail-box h3{
+      margin-left: 25px;
+      font-size: 30px;
+     
+    }
+    .details :hover{
+      background: #1CBBB4;
+      height: 100px;
+      width: 100px;
+      border-radius: 50%;
+      border: none;
+     
+      
+
+    }
+     .rightV img {
+      float: right;
+      height: 40px;
+      width: 40px;
+      margin: 25px;
+      
+    } 
+
+   
+    .rightV div img {
+      padding: 100px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 700px;
+      height: 700px;
+    } 
+  </style
+</head>
+
+<body>
+  <div class="" main>
+    <section class="first ">
+      <div class="left">
+        <div class="header">
+          <img src="./spering-html/images/logo.png" alt="Logo" />
+          <span>Spering</span>
+
+        </div>
+        <div class="left-main-content">
+          <div class="content">
+
+            <p><b>YOU CAN <br>HIRE FREELANCER<br>HERE</b></p>
+            <p>It is a long established fact that a reader will be distracted by the readable content of a page</p>
+
+            <div>
+              <button class="btn1">About Us</button>
+            </div>
+            <div><button class="btn2">Get a qoute</button></div>
+          </div>
+
+        </div>
+      </div>
+      <div class="right">
+        <img src="./spering-html/images/menu.png" alt="Menu">
+        <div>
+          <img src="./spering-html/images/slider-img.png" alt="Slider">
+        </div>
+      </div>
+
+      <div class="leftII">
+
+        <div>
+          <img src="./spering-html/images/experience-img.jpg" alt="experience">
+        </div>
+      </div>
+      <div> 
+        <div class="rightII">
+
+          <div class="right-main-content">
+            <div class="rightcontent">
+
+              <h1>BEST EXPERINCED FREELANCER HERE</h1>
+              <p>It is a long established fact that a reader will be distracted by the readable content of a page when
+                looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution
+                of letters, as
+
+                Read More
+                Hire</p>
+
+              <div>
+                <button class="IIbtn1">Read More</button>
+              </div>
+              <div><button class="IIbtn2">Hire</button></div>
+            </div>
+
+          </div>
+        </div>
+        <div class="leftIII">
+          <div class="images">
+            <div><img src="./spering-html/images/c1.png" alt="image">
+              <p>Design & Arts</p>
+            </div>
+            <div><img src="./spering-html/images/c2.png" alt="">
+              <p>Web Development</p>
+            </div>
+            <div><img src="./spering-html/images/c3.png" alt="">
+              <p>SEO Markting</p>
+            </div>
+            <div><img src="./spering-html/images/c4.png" alt="image">
+              <p>Video Edting</p>
+            </div>
+            <div><img src="./spering-html/images/c5.png" alt="">
+              <p>Logo Design</p>
+            </div>
+            <div><img src="./spering-html/images/c6.png" alt="">
+              <p>Game Design</p>
+            </div>
+
+          </div>
+        </div>
+        <!-- -------------------------------------------------------- -->
+
+        
+
+       
+        <div class="leftV">
+
+          <div class="left-main-contentV">
+            <div class="contentV">
+
+              <p><b>WORK FREELANER HAS DONE</b></p>
+              <div class="details">
+                <div class="c1"><img src="./spering-html/images/f1.png" alt="">
+                  
+                </div>
+              
+                
+              </div>
+              <div class="detail-box">
+                <h5>$250 Million</h5>
+                <h3>Paid to Freelancers</h3>
+              </div>
+              <div class="details">
+                <div class="c1"><img src="./spering-html/images/f2.png" alt="">
+                  
+                </div>
+              
+                
+              </div>
+              <div class="detail-box">
+                <h5>2 Million</h5>
+                <h3>Paid Invoices</h3>
+              </div>
+
+              <div class="details">
+                <div class="c1"><img src="./spering-html/images/f3.png" alt="">
+                  
+                </div>
+              
+                
+              </div>
+              <div class="detail-box">
+                <h5>700,000</h5>
+                <h3>
+                  Worldwide Freelancer</h3>
+              </div>
+
+              <div class="details">
+                <div class="c1"><img src="./spering-html/images/f4.png" alt="">
+                  
+                </div>
+              
+                
+              </div>
+              <div class="detail-box">
+                <h5>98%</h5>
+                <h3>
+                  Customer
+                  Satisfaction Rate</h3>
+              </div>
+
+            
+            </div>
+          </div>
+          </div>
+          <div class="rightV">
+            <div><img src="./spering-html/images/freelance-img.jpg" alt="Menu"></div>
+
+            
+
+          </div>
+
+    </section>
+
+  </div>
+
+
+</body>
+
+</html>

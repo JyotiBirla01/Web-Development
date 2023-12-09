@@ -1,0 +1,11 @@
+<script>
+    let year = parseInt(prompt("Enter the year "));
+    function leapYear(year, callback) {
+        if ((year / 4 == 0) || (year / 100 != 0))
+            document.write("Leap Year");
+    }
+    leapYear(2000, function (n) {
+        n / 100 || n / 400 ? "Century" : "Not Centuary";
+    });
+    leapYear(year);
+</script>

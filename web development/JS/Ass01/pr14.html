@@ -1,0 +1,18 @@
+<!-- Q.13 Find the first repeating element in array of integers  -->
+<script>
+    let arr = [];
+    let n = parseInt(prompt("Enter the size of array "));
+    for (let i = 0; i < n; i++) {
+        arr[i] = parseInt(prompt("Enter the" + (i + 1) + " elements in array  "));
+
+    }
+    for (let i = 0; i < arr.length; i++) {
+        for (let j = i + 1; j < arr.length; j++) {
+            if (arr[i] == arr[j]){
+            document.write(arr[j]);
+          
+            }
+        }
+        break;
+    }
+</script>

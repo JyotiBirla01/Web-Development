@@ -1,0 +1,21 @@
+<!-- 38)	WAP to check whether entered number is Armstrong or not -->
+<script>
+    let n= parseInt(prompt("Enter the number"));
+    let rem,rev=0,cube,sum=0;
+    let temp=n;
+    function armstrong(n){
+while(n!=0){
+    rem=parseInt(n%10);
+cube=rem*rem*rem;
+sum+=cube;
+n=parseInt(n/10);
+}
+if(temp==sum)
+    document.write("Armstrong ");
+    else
+    document.write("Not Armstrong ");
+
+
+    }
+    armstrong(n);
+</script>

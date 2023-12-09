@@ -1,0 +1,12 @@
+<script>
+    let l = parseInt(prompt("Enter the length"));
+    let w = parseInt(prompt("Enter the width"));
+    function areaOfRectangle(l, w, callback) {
+        var area = l * w;
+        document.write(area);
+        callback(area);
+    }
+    areaOfRectangle(l, w, function (n) {
+        n % 2? document.write("Odd") : document.write("Even");
+    });
+</script>

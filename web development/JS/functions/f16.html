@@ -1,0 +1,13 @@
+<!-- 33)	WAP to print Alphabets in reversing order. -->
+<script>
+
+function array(callback){
+    let n=parseInt(prompt("Enter the number "));
+         callback(n);
+    }
+    array(function(n){
+       for(let i=n;i>=1; i--){
+        document.write(String.fromCharCode(i+64)+"<br>");
+       }
+    });
+</script>

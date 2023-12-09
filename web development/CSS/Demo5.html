@@ -1,0 +1,1723 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template-03</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Poppins, sans-serif;
+        }
+
+
+        header {
+            height: 80px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            background-color: #7a6ad8;
+            border-radius: 0px 0px 25px 25px;
+            position: fixed;
+            z-index: 1;
+            
+
+        }
+
+        /* ---------left nav a---------- */
+        .left-nav a {
+            font-size: 30px;
+            text-transform: uppercase;
+            font-weight: 600;
+            color: white;
+            text-decoration: none;
+            position: relative;
+            left: 100px;
+        }
+
+        /* ------------left nav input------------ */
+        .left-nav input {
+            height: 40px;
+            width: 230px;
+            border-radius: 25px;
+            position: relative;
+            left: 150px;
+            border: none;
+            font-size: 15px;
+            background-color: rgba(255, 255, 255, 0.10);
+           }
+
+        /* --------------place holder --------------- */
+        ::-webkit-input-placeholder {
+            font-size: 14px;
+            font-weight: 300;
+            padding: 20px;
+            color: #fff;
+            opacity: 0.7;
+ }
+
+        /* ----------left-nav i------------- */
+        .left-nav i {
+            position: relative;
+            left: 110px;
+            color: white;
+
+        }
+
+        .right-nav ul {
+            display: flex;
+            position: relative;
+            left: 300px;
+            column-gap: 40px;
+            list-style: none;
+            align-items: center;
+            
+                }
+
+        .right-nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 14px;
+            font-weight: 300;
+            font-family: Poppins, sans-serif;
+        }
+
+        .right-nav ul li div a {
+            position: relative;
+            left: 25px;
+            top: 10px;
+        }
+
+        .right-nav ul li div {
+            height: 40px;
+            width: 80px;
+            background-color: rgba(255, 255, 255, 0.10);
+            border-radius: 25px;
+            position: relative;
+        }
+
+        /* ============SECTION-01 CONTAINER================ */
+        .section-01-container {
+            height: 900px;
+            background-color: #7a6ad8;
+            border-radius: 0px 0px 250px 0px;
+        }
+
+        .circle-01 img {
+            position: relative;
+            left: 800px;
+            top: 35px;
+            transform: rotateX(180deg);
+            z-index: 3;
+            opacity: 0.5;
+        }
+
+        /* .circle-02 img {
+           
+            position: relative;
+            left: 75px;
+            top: -500px;
+            transform: ;
+        } */
+
+        .image-01 img {
+            height: 600px;
+            width: 1050px;
+            position: relative;
+            left: 200px;
+            top: 30px;
+            border-radius: 30px;
+        }
+
+        .section-01-content {
+            height: 500px;
+            width: 600px;
+            position: relative;
+            left: 300px;
+            top: -480px;
+            color: white;
+
+        }
+
+        .our-courses {
+            height: 10px;
+            width: 100px;
+            padding: 10px;
+            background-color: #7a6ad8;
+            border-radius: 20px;
+            text-transform: uppercase;
+            font-size: 12px;
+        }
+
+        .section-01-content h1 {
+            font-size: 43px;
+            line-height: 60px;
+            margin-top: 30px;
+            font-family: Poppins, sans-serif;
+        }
+
+        .section-01-content p {
+            font-size: 14px;
+            position: relative;
+            top: 30px;
+            line-height: 30px;
+            font-family: Poppins, sans-serif;
+        }
+
+        .section-01-buttons button {
+            height: 45px;
+            width: 150px;
+            background-color: white;
+            border-radius: 25px;
+            border: none;
+            color: #7a6ad8;
+            position: relative;
+            top: -670px;
+            left: 300px
+        }
+
+        .section-01-icon-button a {
+            position: relative;
+            left: 400px;
+            top: 1000px;
+            color: white;
+            text-decoration: none;
+        }
+
+        .section-01-buttons i {
+            color: white;
+            position: relative;
+            bottom: 655px;
+            left: 330px
+        }
+
+        .section-01-buttons a {
+            text-decoration: none;
+            color: white;
+            position: relative;
+            bottom: 670px;
+            left: 340px
+        }
+
+        .shift-arrow div:nth-child(1) i {
+            color: rgba(255, 255, 255, 0.2);
+            position: relative;
+            top: -650px;
+            left: 100px
+        }
+
+        .shift-arrow div:nth-child(2) i {
+            color: rgba(255, 255, 255, 0.2);
+            margin-top: 20px;
+            position: relative;
+            top: -650px;
+            left: 100px
+        }
+
+        /* <!-- ===============SECTION-02=============== --> */
+        .section-02-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 700px;
+            width: 100%;
+            border: 1px solid red;
+              }
+
+        .boxes {
+            height: 350px;
+            width: 1000px;
+            position: relative;
+            top: 100px;
+            left: 300px;
+            display: flex;
+            justify-content: space-between;
+                   border: 1px solid red;
+
+        }
+
+        .boxes:hover {
+            margin-top: -12px;
+           
+
+        }
+        .boxes div {
+            height: 350px;
+            width: 900;
+            border-radius: 25px;
+            border: 1px solid red;
+
+            }
+
+        .boxes-content {
+            height: 600px;
+            width: 1000px;
+            display: flex;
+            column-gap: 100px;
+            border: 1px solid red;
+
+        
+  }
+
+        .boxes-content div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            row-gap: 30px;
+            background-color: #f1f0fe;
+            border: 1px solid red;
+
+        }
+
+        .boxes-content div p {
+            font-size: 15px;
+            padding: 20px;
+            color: #4a4a4a;
+            border: 1px solid red;
+
+        }
+
+        .boxes-content div button {
+            height: 40px;
+            width: 110px;
+            border-radius: 20px;
+            color: #7a6ad8;
+            border: none;
+            background-color: white;
+            border: 1px solid red;
+
+        }
+
+        .boxes-content div button:hover {
+            background-color: #7a6ad8;
+            color: white;
+
+        }
+
+        .circle-images {
+            display: flex;
+            position: relative;
+            right: 700px;
+            bottom: 200px;
+            column-gap: 100px;
+            border: 1px solid red;
+
+
+        }
+
+        .circle-images div {
+
+            height: 180px;
+            width: 180px;
+            border-radius: 50%;
+            background-color: #7a6ad8;
+            border: 1px solid red;
+
+        }
+
+        .circle-images div {
+            position: relative;
+            left: 180px;
+            top: 110px;
+            border: 1px solid red;
+
+        }
+
+        .circle-images div:nth-child(2) {
+            position: relative;
+            left: 240px;
+            top: 110px;
+        }
+
+        .circle-images div:nth-child(3) {
+            position: relative;
+            left: 300px;
+        }
+
+        .circle-images div img {
+            position: relative;
+            left: 50px;
+            top: 50px;
+            border: 1px solid red;
+
+
+        }
+
+        /* .circle-images div img:hover {
+            margin-top: -10px;
+            
+        } */
+
+
+        /* --------SECTION-03------------- */
+        .section-03-container {
+            height: 650px;
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        /* =============LEFT SECTION============== */
+        .section-03-left {
+            height: 450px;
+            width: 600px;
+            background-color: #7a6ad8;
+            border-radius: 40px;
+            padding-top: 60px;
+        }
+
+        .section-03-left button {
+            font-size: 15px;
+            font-weight: 600;
+            padding-right: 200px !important;
+            height: 60px;
+            width: 450px;
+            border: none;
+            border-radius: 30px;
+            background-color: #fff;
+            margin: 20px;
+            margin-left: 80px;
+        }
+
+        .section-03-left i {
+            color: #7a6ad8;
+            position: relative;
+            right: 80px;
+            top: 5px;
+        }
+
+        /* ==============RIGHT SECTION=============== */
+        .section-03-right {
+            height: 400px;
+            width: 600px;
+            background-color: #f1f0fe;
+            margin-top: 40px;
+        
+        }
+
+        .section-03-right h6 {
+            color: #7a6ad8;
+            font-size: 14px;
+            text-transform: uppercase;
+            font-weight: 600;
+            margin-inline: 90px;
+            margin-top: 20px;
+    
+        }
+
+        .section-03-right h2 {
+            font-size: 36px;
+            font-weight: 600;
+            margin: 20px;
+            margin-inline: 90px;
+            margin-right: 170px;
+            line-height: 44px;
+        }
+
+        .section-03-right p {
+            font-size: 14px;
+            line-height: 28px;
+            color: #4a4a4a;
+            margin-inline: 90px;
+            margin-right: 150px;
+            }
+
+        .section-03-right button {
+            height: 40px;
+            width: 150px;
+            border-radius: 25px;
+            background-color: white;
+            color: #7a6ad8;
+            border: none;
+            margin-left: 90px;
+            margin-right: 90px;
+            margin-top: 30px;
+            font-weight: 600;
+        }
+
+        .section-03-right button:hover {
+            background-color: #7a6ad8;
+            color: white;
+        }
+
+        /* ===========SECTION-04================= */
+        .section-04-container {
+            height: 1000px;
+            width: 100%;
+           
+        }
+
+        .latest-course-images {
+            display: flex;
+            flex-direction: column;
+            row-gap: 50px;
+            height: 750px;
+            width: 100%;
+          }
+
+        .section-04-container h6 {
+            color: #7a6ad8;
+            font-size: 14px;
+            text-transform: uppercase;
+            font-weight: 600;
+            text-align: center;
+
+        }
+
+        .section-04-container h2 {
+            font-size: 35px;
+            font-weight: 600;
+            text-transform: capitalize;
+            margin: 20px 0;
+            line-height: 44px;
+            text-align: center;
+
+        }
+
+        .section-04-container ul {
+            display: flex;
+            background-color: #f1f0fe;
+            border-radius: 50px;
+            padding: 15px 40px;
+            list-style: none;
+            font-weight: 500;
+            margin: 0 auto 70px;
+            max-width: max-content;
+            column-gap: 50px;
+            font-size: 14px;
+        }
+
+        .section-04-container ul li:hover {
+            color: #7a6ad8;
+        }
+        .events-item {
+            height: 350px;
+            width: 350px;
+            border-radius: 25px;
+            overflow: hidden;
+
+        }
+
+        .section-04-images {
+            height: 350px;
+            width: 1200px;
+            position: relative;
+            left: 110px;
+            display: flex;
+            column-gap: 30px;
+
+        }
+
+        .section-04-images img {
+            height: 250px;
+            width: 350px;
+            border-radius: 25px;
+
+        }
+
+        .events-item span:nth-child(2) {
+            font-size: 14px;
+            text-transform: uppercase;
+            color: #7a6ad8;
+            background-color: rgba(250, 250, 250, 0.95);
+            padding: 8px 20px;
+            border-radius: 25px;
+            font-weight: bold;
+            display: inline-block;
+        }
+
+
+        .category1 {
+            position: absolute;
+            left: 30px;
+            top: 30px;
+
+        }
+
+        .category2 {
+            position: absolute;
+            left: 400px;
+            top: 30px;
+
+        }
+
+        .category3 {
+            position: absolute;
+            left: 800px;
+            top: 30px;
+
+        }
+
+        .price {
+            position: relative;
+            bottom: 310px;
+            left: 250px;
+            background-color: rgba(135, 119, 224, 0.95);
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            display: inline-block;
+            transition: all .3s;
+
+
+        }
+
+        .price h6 {
+            margin-top: 72px;
+            margin-left: 2px;
+            font-size: 28px;
+            text-transform: uppercase;
+            color: #fff;
+            font-weight: 700;
+        }
+
+        .price em {
+            font-size: 18px;
+            font-weight: 500;
+            font-style: normal;
+            vertical-align: top;
+        }
+
+        .down-content {
+            padding: 20px 30px 25px 30px;
+            width: 290px;
+            position: relative;
+            bottom: 100px;
+            background-color: #f1f0fe;
+            border-radius: 25px;
+        }
+
+        .down-content span {
+            color: #7a6ad8;
+            font-size: 15px;
+            display: inline-block;
+            margin-bottom: 6px;
+            text-transform: capitalize;
+        }
+
+        .down-content h4 {
+            font-size: 22px;
+            font-weight: 600;
+            text-transform: capitalize;
+
+
+        }
+
+        .down-content:hover {
+            color: #7a6ad8;
+
+        }
+
+        /* ============section-05============ */
+        .section-05-container {
+            height: 1000px;
+            width: 100%;
+          
+        }
+
+        .fun-facts {
+            margin-top: 100px;
+            height: 330px;
+            width: 95%;
+            border-top-right-radius: 200px;
+            border-bottom-right-radius: 200px;
+            background-color: #7a6ad8;
+
+        }
+
+        .fun-facts img {
+            position: relative;
+            left: 200px;
+     }
+
+        .section-05-content {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .section-05-content div {
+            height: 150px;
+            width: 150px;
+        
+        }
+
+        .section-05-content div h1 {
+            color: white;
+            font-size: 50px;
+        }
+
+        .section-05-content div p {
+            color: white;
+            margin-top: 20px;
+        }
+
+        /* ==========SECOND PART ============ */
+
+        .section-05-second-part {
+            height: 350px;
+            margin-top: 200px;
+           
+        }
+
+        .section-05-second-part-content {
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            column-gap: 30px;
+        }
+
+        .section-05-second-part-content div {
+            margin-top: 50px;
+            height: 290px;
+            width: 250px;
+            border-radius: 30px;
+            background-color: #f1f0fe;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+           
+        }
+
+        .section-05-second-part-content p {
+            color: #7a6ad8;
+            text-transform: capitalize;
+        }
+
+        .section-05-second-part-content h4 {
+            position: relative;
+            top: 20px;
+            font-size: 20px;
+            text-transform: capitalize;
+        }
+
+        .circle-div {
+            display: flex;
+            justify-content: center;
+            column-gap: 70px;
+        }
+
+        .circle-div div {
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            position: relative;
+            bottom: 400px;
+            box-sizing: border-box;
+        }
+
+        .circle-div div img {
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            transition: all .3s;
+        }
+
+        .circle-div div img:hover {
+            margin-top: -10px;
+            transition: 1s ease-in-out;
+
+        }
+
+        .section-05-icons {
+            display: flex;
+            column-gap: 10px;
+           
+        }
+
+        .section-05-icons div {
+            height: 40px;
+            width: 40px;
+            background-color: #fff;
+        
+        }
+
+        .section-05-icons div i {
+            color: #7a6ad8;
+        }
+
+        /* ===========SECTION-06============= */
+        .section-06-container {
+            height: 700px;
+            width: 100%;
+            display: flex;
+           
+        }
+
+        .first-div {
+            position: relative;
+            left: 130px;
+            top: 70px;
+            height: 400px;
+            width: 1100px;
+            background-color: #7a6ad8;
+            border-radius: 30px;
+            color: white;
+
+        }
+
+        .second-div {
+            height: 600px;
+            width: 1200px;
+            background-color: #f1f0fe;
+            border-bottom-left-radius: 300px;
+            border-top-left-radius: 300px;
+        }
+
+        .first-div p {
+            font-size: 20px;
+            line-height: 40px;
+            font-style: italic;
+            margin: 50px;
+           
+        }
+
+        .first-content {
+            margin-bottom: 20px;
+            height: 150px;
+            width: 90%;
+            
+        }
+
+        .first-div div img {
+
+            margin-left: 30px;
+            height: 120px;
+            width: 120px;
+            border-radius: 50%;
+            transform: scale(1.5);
+           
+        }
+
+
+        .first-div span {
+            text-transform: capitalize;
+            font-size: 15px;
+            position: relative;
+            left: 30px;
+            top: -70px;
+
+        }
+
+        .first-div div h2 {
+            position: relative;
+            left: 170px;
+            bottom: 60px;
+            text-transform: capitalize;
+        }
+
+        .second-div div {
+            height: 300px;
+            width: 350px;
+            position: relative;
+            left: 200px;
+            top: 100px;
+           
+        }
+
+        .second-div div h5 {
+            color: #7a6ad8;
+
+        }
+
+        .second-div div h2 {
+            font-size: 36px;
+            font-weight: 600;
+            margin: 20px 0;
+            line-height: 44px;
+        }
+
+        .second-div div p {
+            font-size: 14px;
+            line-height: 28px;
+            color: #4a4a4a;
+
+        }
+
+        .circle-next {
+            position: relative;
+            left: 615px;
+            top: -250px;
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            background-color: #fff;
+            color: #7a6ad8;
+        }
+
+        .circle-next i {
+            position: relative;
+            left: 20px;
+            top: 15px;
+        }
+
+        /* ===========SECTION-07============= */
+        .section-07-container {
+            height: 1000px;
+            width: 100%;
+           
+        }
+
+        .section-07-container h5 {
+            margin-left: 600px;
+            color: #7a6ad8;
+            font-size: 14px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .section-07-container h2 {
+            margin-left: 500px;
+            margin-top: 20px;
+            font-weight: 600;
+            font-size: 36px;
+            font-weight: 600;
+            text-transform: capitalize;
+        }
+
+        .section-07-item {
+            height: 800px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            row-gap: 100px;
+
+        }
+
+        .section-07-content {
+            display: flex;
+            height: 170px;
+            width: 83%;
+            border-radius: 25px;
+            background-color: #f1f0fe;
+            position: relative;
+            top: 40px;
+            left: 110px;
+         
+        }
+
+        .image img {
+            height: 210px;
+            width: 250px;
+            border-radius: 25px;
+            position: relative;
+            top: -25px;
+            left: 40px;
+        }
+
+        .section-07-data {
+            position: relative;
+            left: 40px;
+            height: 100px;
+            width: 825px;
+          
+        }
+
+        .section-07-data ul {
+            position: relative;
+            left: 20px;
+            top: 30px;
+            height: 100px;
+            width: 700px;
+            display: flex;
+            justify-content: space-between;
+            text-transform: capitalize;
+            align-items: center;
+            list-style: none;
+        }
+
+        .upcoming-events {
+            font-size: 14px;
+            text-transform: uppercase;
+            color: #7a6ad8 !important;
+            background-color: #fff;
+            padding: 8px 20px;
+            border-radius: 25px;
+            font-weight: 500;
+        }
+
+        .section-07-data ul li span {
+
+            font-size: 14px !important;
+            color: #4a4a4a;
+            margin-bottom: 10px !important;
+        }
+
+        .section-07-data ul li h4 {
+            margin-top: 20px;
+            font-size: 23px !important;
+
+        }
+
+        .section-07-data ul li h6 {
+            margin-top: 20px;
+            font-size: 16px !important;
+            color: #7a6ad8;
+            font-weight: 600;
+
+        }
+
+        .section-07-data a {
+            position: absolute;
+            right: 0;
+            top: 20px;
+            /* left: 30px; */
+            background-color: #7a6ad8;
+            width: 60px;
+            height: 120px;
+            color: #fff;
+            border-radius: 60px 0px 0px 60px;
+        }
+
+        .section-07-data a i {
+            position: relative;
+            left: 30px;
+            top: 50px;
+        }
+
+        /* ===============SECTION-08================ */
+        .section-08-container {
+            height: 750px;
+            width: 100%;
+            display: flex;
+        }
+
+        .section-08-first {
+            height: 600px;
+            width: 800px;
+            background-color: #f1f0fe;
+            border-bottom-right-radius: 250px;
+            border-top-right-radius: 250px;
+
+        }
+
+        .section-08-first-content {
+            position: relative;
+            left: 130px;
+            top: 80px;
+            height: 500px;
+            width: 450px;
+           
+        }
+
+        .section-08-first h6 {
+            color: #7a6ad8;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 50px;
+            text-transform: uppercase;
+        }
+
+        .section-08-first h2 {
+
+            font-weight: 600;
+            font-size: 36px;
+            text-transform: capitalize;
+        }
+
+        .section-08-first p {
+            margin-top: 40px;
+            font-size: 14px;
+            line-height: 28px;
+            color: #4a4a4a;
+        }
+
+        .section-08-box {
+            margin-top: 40px;
+            height: 140px;
+            width: 430px;
+            border-radius: 30px;
+            background-color: white;
+          
+        }
+
+        .offer {
+            line-height: 25px;
+            color: #fff;
+            font-size: 16px;
+            text-transform: uppercase;
+            position: absolute;
+            left: 2px;
+            background-color: #7a6ad8;
+            width: 70px;
+            height: 120px;
+            border-radius: 0px 90px 90px 0px;
+            border-bottom-left-radius: 30px;
+            border-top-left-radius: 30px;
+        }
+
+        .offer em {
+            font-size: 28px;
+            font-weight: 600;
+        }
+
+        .section-08-box h6 {
+            margin-left: 100px;
+            margin-top: 25px;
+            font-size: 15px;
+            color: #4a4a4a;
+            text-transform: uppercase;
+            font-weight: 400;
+
+        }
+
+        .section-08-box h6 em {
+            font-style: normal;
+            color: #7a6ad8;
+            font-weight: 600;
+        }
+
+        .section-08-box h4 {
+            margin-left: 100px;
+            font-size: 20px;
+            text-transform: capitalize;
+            font-weight: 600;
+        }
+
+        .section-08-box h4 em {
+            font-style: normal;
+            color: #7a6ad8;
+            font-weight: 600;
+        }
+
+        .section-08-box div {
+            position: relative;
+            left: 350px;
+            top: -50px;
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            background-color: #7a6ad8;
+        
+        }
+
+        .section-08-box div i {
+            color: white;
+            margin-left: 20px;
+            margin-top: 22px;
+        }
+
+        /* ---------------SECOND PART ---------------- */
+        .section-08-second {
+            position: relative;
+            right: 120px;
+            top: 40px;
+            height: 550px;
+            width: 550px;
+            background-color: #7a6ad8;
+            border-radius: 30px;
+        }
+
+        .section-08-form {
+            position: relative;
+            left: 80px;
+            top: -60px;
+            height: 400px;
+            width: 400px;
+            }
+
+        .section-08-form form {
+            display: flex;
+            flex-direction: column;
+            row-gap: 10px;
+        }
+
+
+        .section-08-form form input[type="text"] {
+            height: 50px;
+            width: 400px;
+            border-radius: 25px;
+            background-color: rgba(249, 235, 255, 0.15);
+            border: none;
+        }
+
+        .section-08-form form input[type="email"] {
+            height: 50px;
+            width: 400px;
+            border-radius: 25px;
+            background-color: rgba(249, 235, 255, 0.15);
+            border: none;
+        }
+
+        .section-08-form form input[type="textarea"] {
+            height: 130px;
+            width: 400px;
+            border-radius: 25px;
+            background-color: rgba(249, 235, 255, 0.15);
+            border: none;
+        }
+
+        .section-08-form form button {
+            height: 50px;
+            width: 180px;
+            color: #7a6ad8;
+            border-radius: 25px;
+            text-transform: capitalize;
+            background-color: white;
+            border: none;
+            font-weight: bold;
+        }
+
+        .section-08-images img {
+            position: relative;
+            left: 130px;
+            /* z-index: -1; */
+        }
+
+        .section-08-images-02 {
+            position: relative;
+            width: 200px;
+            left: 360px;
+            top: -130px;
+
+        }
+
+        /* ===============SECTION-09 =============== */
+        .section-09-container {
+            height: 150px;
+            width: 100%;
+            background-color: #7a6ad8;
+            border-top-right-radius: 200px;
+            border-top-left-radius: 200px;
+        }
+
+        .section-09-container img {
+            transform: rotateX(180deg);
+            position: relative;
+            top: 30px;
+            left: 25px;
+        }
+.para{
+   
+    height: 30px;
+    width: 700px;
+    position: relative;
+    left: 400px;
+    top: -50px;
+    font-size: 14px;
+    color: #fff;
+}
+.para a{
+    text-decoration: none;
+    color: #fff;
+}
+    </style>
+
+</head>
+
+<body>
+    <!-- ----------MAIN CONTAINER-------------------- -->
+    <div class="main-container">
+        <div class="header-div">
+            <!-- -------------HEADER--------------------- -->
+            <header>
+                <!-- ---------LEFT NAVIGATION-------------- -->
+                <nav class="left-nav">
+                    <a href="">Scholar</a>
+                    <input type="text" name="" id="" placeholder="Type Something">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </nav>
+                <!-- -----------RIGHT NAVIGATION------------------- -->
+                <nav class="right-nav">
+                    <ul>
+                        <li>
+                            <div><a href="">Home</a></div>
+                        </li>
+                        <li><a href="">Services</a></li>
+                        <li><a href="">Courses</a></li>
+                        <li><a href="">Team</a></li>
+                        <li><a href="">Events</a></li>
+                        <li><a href="">Register Now!</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+        <!-- -----------SECTION-01----------------- -->
+        <section class="section-01">
+            <div class="section-01-container">
+                <div class="circle-01">
+
+                    <img src="./templatemo_586_scholar/templatemo_586_scholar/assets/images/contact-dec-01.png" alt="">
+                </div>
+
+                <div class="image-01">
+                    <img src="./templatemo_586_scholar/templatemo_586_scholar/assets/images/banner-item-01.jpg" alt="">
+
+                </div>
+                <!-- <div class="circle-02">
+                    <img src="./templatemo_586_scholar/templatemo_586_scholar/assets/images/contact-dec-01.png" alt="">
+                    </div> -->
+                <div class="section-01-content">
+                    <div class="our-courses">Our Courses </div><br>
+                    <h1>With Scholar Teachers, <br> Everything Is Easier</h1>
+                    <p>Scholar is free CSS template designed by TemplateMO for online educational related website.This
+                        layout is based onn the famous Bootstrap v5.3.0 framework.</p>
+                </div>
+                <div class="section-01-buttons">
+                    <button>Request Demo</button>
+                    <i class="fa-solid fa-circle-play fa-3x"></i>
+                    <a href="">what's scholar?</a>
+
+                </div>
+                <div class="shift-arrow">
+                    <div><i class="fa-solid fa-circle-chevron-left fa-3x"></i></div>
+                    <div><i class="fa-solid fa-circle-chevron-right fa-3x"></i></div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ----------------SECTION-02-------------------- -->
+        <section class="section-02">
+            <div class="section-02-container">
+                <div class="boxes">
+                    <div class="boxes-content">
+                        <div>
+                            <h2>Online Degrees</h2>
+                            <p>Whenever you need free templates in HTML CSS, you just remember TemplateMo website.</p>
+                            <button>Read More</button>
+                        </div>
+
+                        <div>
+                            <h2>Short Courses</h2>
+                            <p>You can browse free templates based on different tags such as digital marketing, etc.</p>
+                            <button>Read More</button>
+                        </div>
+                        <div>
+                            <h2>Web Experts</h2>
+                            <p>You can start learning HTML CSS by modifying free templates from our website too.</p>
+                            <button>Read More</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- ---------------circle div images------------ -->
+                <div class="circle-images">
+                    <div><img src="./templatemo_586_scholar/templatemo_586_scholar/assets/images/service-01.png" alt="">
+                    </div>
+                    <div><img src="./templatemo_586_scholar/templatemo_586_scholar/assets/images/service-02.png" alt="">
+                    </div>
+                    <div><img src="./templatemo_586_scholar/templatemo_586_scholar/assets/images/service-03.png" alt="">
+                    </div>
+
+                </div>
+
+
+            </div>
+        </section>
+        <!-- ----------------SECTION-03-------------- -->
+        <section class="section-03">
+            <div class="section-03-container">
+                <div class="section-03-left">
+                    <button>Where we shall begin?</button><i class="fa-solid fa-circle-plus fa-2x"></i>
+                    <button>How do we work together?</button><i class="fa-solid fa-circle-plus fa-2x"></i>
+                    <button>Why SCHOLAR is the best?</button><i class="fa-solid fa-circle-plus fa-2x"></i>
+                    <button>Do we get the best support?</button><i class="fa-solid fa-circle-plus fa-2x"></i>
+                </div>
+                <div class="section-03-right">
+                    <h6>about us</h6>
+                    <h2>What Make Us The Best Academy Online?</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravid risus commodo.</p>
+                    <button>Discover More</button>
+                </div>
+            </div>
+        </section>
+        <!-- --------------SECTION-04----------- -->
+        <section class="section-04">
+            <div class="section-04-container">
+                <h6>latest courses</h6>
+                <h2>latest courses</h2>
+                <ul>
+                    <li class="latest-course-nav"><a href=""></a>Show All</li>
+                    <li><a href=""></a>Webdesign</li>
+                    <li><a href=""></a>Development</li>
+                    <li><a href=""></a>Wordpress</li>
+
+                </ul>
+                <div class="latest-course-images">
+                    <div class="section-04-images">
+                        <!-- ========EVENT ITEM -01================ -->
+                        <div class="section-04-content">
+
+                            <div class="events-item">
+                                <a href=""><img
+                                        src="./templatemo_586_scholar/templatemo_586_scholar/assets/images/course-01.jpg"
+                                        alt=""></a>
+                                <span class="category1">webdesign</span>
+                                <span class="price">
+                                    <h6><em>$</em> 160</h6>
+
+                                </span>
+                            </div>
+                            <div class="down-content">
+                                <span>Stella Blair</span>
+                                <h4>Learn Web Design</h4>
+                            </div>
+
+                        </div>
+                        <!-- ==============SECOND IMAGE =================== -->
+
+                        <div class="section-04-content">
+
+                            <div class="events-item">
+                                <a href=""><img class="image-hover"
+                                        src="./templatemo_586_scholar/templatemo_586_scholar/assets/images/course-02.jpg"
+                                        alt=""></a>
+                                <span class="category2">Development</span>
+                                <span class="price">
+                                    <h6><em>$</em> 340</h6>
+
+                                </span>
+                            </div>
+                            <div class="down-content">
+                                <span>cindy walker</span>
+                                <h4>web development tips</h4>
+                            </div>
+
+                        </div>
+                        <!-- =============THIRD IMAGE =============== -->
+                        <div class="section-04-content">
+
+                            <div class="events-item">
+                                <a href=""><img
+                                        src="./templatemo_586_scholar/templatemo_586_scholar/assets/images/course-03.jpg"
+                                        alt=""></a>
+                                <span class="category3">wordpress</span>
+                                <span class="price">
+                                    <h6><em>$</em> 640</h6>
+
+                                </span>
+                            </div>
+                            <div class="down-content">
+                                <span>David Hutson</span>
+                                <h4>Latest Web Trends</h4>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- =======SECOND PART ========== -->
+                    <div class="section-04-images">
+                        <!-- ========EVENT ITEM -02================ -->
+                        <div class="section-04-content">
+
+                            <div class="events-item">
+                                <a href=""><img
+                                        src="./templatemo_586_scholar/templatemo_586_scholar/assets/images/course-04.jpg"
+                                        alt=""></a>
+                                <span class="category1">Development</span>
+                                <span class="price">
+                                    <h6><em>$</em> 450</h6>
+
+                                </span>
+                            </div>
+                            <div class="down-content">
+                                <span>Stella Blair</span>
+                                <h4>online learning steps</h4>
+                            </div>
+
+                        </div>
+                        <!-- ==============SECOND IMAGE =================== -->
+
+                        <div class="section-04-content">
+
+                            <div class="events-item">
+                                <a href=""><img class="image-hover"
+                                        src="./templatemo_586_scholar/templatemo_586_scholar/assets/images/course-05.jpg"
+                                        alt=""></a>
+                                <span class="category2">wordpress</span>
+                                <span class="price">
+                                    <h6><em>$</em> 320</h6>
+
+                                </span>
+                            </div>
+                            <div class="down-content">
+                                <span>sophia rose</span>
+                                <h4>Be a wordPress master</h4>
+                            </div>
+
+                        </div>
+                        <!-- =============THIRD IMAGE =============== -->
+                        <div class="section-04-content">
+
+                            <div class="events-item">
+                                <a href=""><img
+                                        src="./templatemo_586_scholar/templatemo_586_scholar/assets/images/course-06.jpg"
+                                        alt=""></a>
+                                <span class="category3">webdesign</span>
+                                <span class="price">
+                                    <h6><em>$</em> 240</h6>
+
+                                </span>
+                            </div>
+                            <div class="down-content">
+                                <span>David Hutson</span>
+                                <h4>Full stack Developer</h4>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- --------------SECTION-05------------ -->
+        <section class="section-05">
+            <div class="section-05-container">
+                <div class="fun-facts">
+                    <img src="./templatemo_586_scholar/templatemo_586_scholar/assets/images/contact-dec-01.png" alt="">
+                    <div class="section-05-content">
+                        <div>
+                            <h1>150+</h1>
+                            <p>Happy Students</p>
+                        </div>
+                        <div>
+                            <h1>804+</h1>
+                            <p>course hourse</p>
+                        </div>
+                        <div>
+                            <h1>50+</h1>
+                            <p>employed Students</p>
+                        </div>
+                        <div>
+                            <h1>15+</h1>
+                            <p>year experience</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ---------------second part ------------ -->
+                <div class="section-05-second-part">
+                    <div class="section-05-second-part-boxes">
+                        <div class="section-05-second-part-content">
+                            <div>
+                                <p>ux teacher</p>
+                                <h4>sophia teacher</h4>
+                                <span class="section-05-icons">
+                                    <div><i class="fa-brands fa-facebook fa-1x"></i></div>
+                                    <div> <i class="fa-brands fa-twitter fa-1x"></i></div>
+                                    <div> <i class="fa-brands fa-linkedin fa-1x"></i></div>
+                                </span>
+                            </div>
+                            <div>
+                                <p>graphic teacher</p>
+                                <h4>cindy walker</h4>
+                                <span class="section-05-icons">
+                                    <div><i class="fa-brands fa-facebook fa-1x"></i></div>
+                                    <div> <i class="fa-brands fa-twitter fa-1x"></i></div>
+                                    <div> <i class="fa-brands fa-linkedin fa-1x"></i></div>
+                                </span>
+                            </div>
+                            <div>
+                                <p>graphic teacher</p>
+                                <h4>cindy walker</h4>
+                                <span class="section-05-icons">
+                                    <div><i class="fa-brands fa-facebook fa-1x"></i></div>
+                                    <div> <i class="fa-brands fa-twitter fa-1x"></i></div>
+                                    <div> <i class="fa-brands fa-linkedin fa-1x"></i></div>
+                                </span>
+                            </div>
+                            <div>
+                                <p>digital animator</p>
+                                <h4>stella blair</h4>
+                                <span class="section-05-icons">
+                                    <div><i class="fa-brands fa-facebook fa-1x"></i></div>
+                                    <div> <i class="fa-brands fa-twitter fa-1x"></i></div>
+                                    <div> <i class="fa-brands fa-linkedin fa-1x"></i></div>
+                                </span>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="circle-div">
+                        <div><img src="./templatemo_586_scholar/templatemo_586_scholar/assets/images/member-01.jpg"
+                                alt="">
+                        </div>
+                        <div><img src="./templatemo_586_scholar/templatemo_586_scholar/assets/images/member-02.jpg"
+                                alt=""></div>
+                        <div><img src="./templatemo_586_scholar/templatemo_586_scholar/assets/images/member-03.jpg"
+                                alt=""></div>
+                        <div><img src="./templatemo_586_scholar/templatemo_586_scholar/assets/images/member-04.jpg"
+                                alt=""></div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- --------------SECTION-06------------- -->
+        <section class="section-06">
+            <div class="section-06-container">
+
+                <div class="first-div">
+                    <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravid.”</p>
+                    <div class="first-content">
+                        <img src="./templatemo_586_scholar/templatemo_586_scholar/assets/images/member-04.jpg" alt="">
+                        <span>uI expert</span>
+                        <h2>thomos jefferson</h2>
+                    </div>
+                    <div class="circle-next"><i class="fa-solid fa-angle-right fa-lg"></i></div><br>
+                    <div class="circle-next"><i class="fa-solid fa-angle-left fa-lg"></i></div>
+
+                </div>
+                <div class="second-div">
+                    <div>
+                        <h5>TESTIMONIALS</h5>
+                        <h2>What They Say About Us?</h2>
+                        <p>You can search free CSS templates on Google using different keywords such as templatemo
+                            portfolio, templatemo gallery, templatemo blue color, etc.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- --------------SECTION-07--------------- -->
+        <section class="section-07">
+            <div class="section-07-container">
+                <h5>shedule</h5>
+                <h2>upcoming events</h2>
+
+                <!-- ********FIRST EVENT************ -->
+                <div class="section-07-item">
+                    <div class="section-07-content">
+                        <div class="image">
+                            <img src="./templatemo_586_scholar/templatemo_586_scholar/assets/images/event-01.jpg"
+                                alt="">
+                        </div>
+                        <div class="section-07-data">
+                            <ul>
+                                <li><span class="upcoming-events">web design </span>
+                                    <h4>uI best practices</h4>
+                                </li>
+                                <li><span>date</span>
+                                    <h6>16 feb 2036</h6>
+                                </li>
+                                <li><span>duration</span>
+                                    <h6>22 hours</h6>
+                                </li>
+                                <li><span>price</span>
+                                    <h6>$120</h6>
+                                </li>
+
+                            </ul>
+                            <a href=""><i class="fa-solid fa-angle-right fa-lg"></i></a>
+                        </div>
+                    </div>
+                    <!-- *********SECOND EVENT*********** -->
+
+                    <div class="section-07-content">
+                        <div class="image">
+                            <img src="./templatemo_586_scholar/templatemo_586_scholar/assets/images/event-02.jpg"
+                                alt="">
+                        </div>
+                        <div class="section-07-data">
+                            <ul>
+                                <li><span class="upcoming-events">front end </span>
+                                    <h4>new design trend</h4>
+                                </li>
+                                <li><span>date</span>
+                                    <h6>24 feb 2036</h6>
+                                </li>
+                                <li><span>duration</span>
+                                    <h6>30 hours</h6>
+                                </li>
+                                <li><span>price</span>
+                                    <h6>$320</h6>
+                                </li>
+
+                            </ul>
+                            <a href=""><i class="fa-solid fa-angle-right fa-lg"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- *************THIRD EVENT*********** -->
+                    <div class="section-07-content">
+                        <div class="image">
+                            <img src="./templatemo_586_scholar/templatemo_586_scholar/assets/images/event-03.jpg"
+                                alt="">
+                        </div>
+                        <div class="section-07-data">
+                            <ul>
+                                <li><span class="upcoming-events">full stack</span>
+                                    <h4>web programming</h4>
+                                </li>
+                                <li><span>date</span>
+                                    <h6>12 march 2036</h6>
+                                </li>
+                                <li><span>duration</span>
+                                    <h6>48 hours</h6>
+                                </li>
+                                <li><span>price</span>
+                                    <h6>$440</h6>
+                                </li>
+
+                            </ul>
+                            <a href=""><i class="fa-solid fa-angle-right fa-lg"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- ------------SECTION-08------------------- -->
+        <section class="section 08">
+            <div class="section-08-container">
+                <div class="section-08-first">
+                    <div class="section-08-first-content">
+                        <h6>contact us</h6>
+                        <h2>Feel Free To Contact Us Anytime</h2>
+                        <p>Thank you for choosing our templates. We provide you best CSS templates at absolutely 100%
+                            free
+                            of charge. You may support us by sharing our website to your friends.
+
+                        </p>
+                        <div class="section-08-box">
+                            <span class="offer"><br>off <br><em>50%</em></span>
+                            <h6>valide: <em>24 april 2036</em></h6>
+                            <h4>special offer <em>50%</em><br> off!</h4>
+                            <div><i class="fa-solid fa-angle-right fa-lg"></i></div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- =============SECOND PART =============== -->
+                <div class="section-08-second">
+                    <div class="section-08-images">
+                        <img src="./templatemo_586_scholar/templatemo_586_scholar/assets/images/contact-dec-01.png"
+                            alt="">
+                    </div>
+                    <div class="section-08-form">
+                        <form action="">
+                            <input type="text" name="Name" id="" placeholder="Your Name..."><br>
+                            <input type="email" name="email" id="" placeholder="Your E-mail.."><br>
+                            <input type="textarea" name="message" id="" placeholder="Your Message"><br>
+                            <button>send message now</button>
+
+                        </form>
+                    </div>
+                    <div class="section-08-images-02">
+                        <img src="./templatemo_586_scholar/templatemo_586_scholar/assets/images/contact-dec-02.png"
+                            alt="">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- ------------SECTION-09--------------- -->
+        <section class="section-09">
+            <div class="section-09-container">
+                <img src="./templatemo_586_scholar/templatemo_586_scholar/assets/images/contact-dec-01.png" alt="">
+<div class="para">
+                <p>Copyright © 2036 Scholar Organization. All rights reserved. &nbsp;&nbsp;&nbsp; Design: <a
+                        href="https://templatemo.com" rel="nofollow" target="_blank">TemplateMo</a></p>
+                    </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            border: 1px solid black;
+            height: 500px;
+            width: 500px;
+            box-sizing: border-box;
+            position: relative;
+        }
+
+        .box {
+            position: absolute;
+            box-sizing: border-box;
+            background-color: red;
+            border-radius: 50%;
+            height: 100px;
+            width: 100px;
+            animation-name: box1;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            /* animation-direction: alternate-reverse; */
+        }
+
+        @keyframes box1 {
+            0% {
+                left: 0%;
+            }
+
+            4% {
+                left: 80%;
+            }
+
+            8% {
+                left: 60%;
+            }
+
+            12% {
+                left: 80%;
+            }
+
+            16% {
+                left: 70%;
+            }
+
+            21% {
+                left: 80%;
+            }
+
+            25% {
+                left: 80%;
+                top: 0%;
+            }
+
+            29% {
+                top: 80%;
+            }
+
+            33% {
+                top: 60%;
+            }
+
+            37% {
+                top: 80%;
+            }
+
+            41% {
+                top: 70%;
+            }
+
+            45% {
+                top: 80%;
+            }
+
+            50% {
+
+                top: 80%;
+                right: 0%;
+            }
+
+            54% {
+                right: 80%;
+            }
+
+            58% {
+                right: 60%;
+            }
+
+            62% {
+                right: 80%;
+            }
+
+            66% {
+                right: 70%;
+            }
+
+            70% {
+                right: 80%;
+            }
+
+            75% {
+
+                right: 80%;
+                bottom: 0%;
+            }
+
+            79% {
+                bottom: 80%;
+            }
+
+            83% {
+                bottom: 60%;
+            }
+
+            87% {
+                bottom: 80%;
+            }
+
+            91% {
+                bottom: 70%;
+            }
+
+            95% {
+                bottom: 80%;
+            }
+
+            100% {
+
+                bottom: 80%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>

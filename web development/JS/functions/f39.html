@@ -1,0 +1,22 @@
+<!-- 5)	WAP to print factorial of all the numbers between two entered numbers -->
+<pre>
+<script>
+                let n1 = parseInt(prompt("Enter the first  number "));
+                let n2 = parseInt(prompt("Enter the second number"));
+                document.write("Factorial of  Number is  :- "); 
+                function factorial (n1, n2) {
+                   for(let i=n1;i<=n2; i++ ){
+                   let  n=i;
+                   for(let j=1; j<=n; j++  ){
+                     fact=fact*n;
+                   }
+                 
+                   document.write("Factorial of "+(i)+" is "+fact );
+                   }
+            
+                }
+                factorial(n1, n2);
+            
+</script>
+</pre>
+        

@@ -1,0 +1,18 @@
+<script>
+    function smallest(a, b, c) {
+        if (a < b)
+            c(a, 30);
+        else
+            c(b, 30);
+
+    }
+    smallest(10, 20, function (x, y) {
+
+        
+        if (x < y)
+            document.write(x);
+        else
+            document.write(y);
+
+    });
+</script>

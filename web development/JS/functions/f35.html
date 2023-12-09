@@ -1,0 +1,26 @@
+<!-- 1)	WAP to find out all the Armstrong numbers between two entered numbers -->
+<pre>
+    <script>
+        let n1= parseInt(prompt("Enter the first  number "));
+        let n2=parseInt(prompt("Enter the second number" ));
+        function armstrong(n1,n2){
+            let rem,n;
+        for (let i = n1; i <= n2; i++) {
+           var sum = 0;
+           n = i;
+           temp=n;
+            while (n != 0) {
+                rem = parseInt(n % 10);
+                cube = rem* rem* rem;
+                 sum+=cube; 
+                n = parseInt(n / 10);
+
+            }
+            if(sum==temp)
+            document.write(sum+ " is armstrong number ");     
+        }
+       
+        }
+        armstrong(n1,n2);
+    </script>
+</pre>
