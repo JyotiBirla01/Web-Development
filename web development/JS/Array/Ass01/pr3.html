@@ -1,0 +1,20 @@
+<!-- Q.3 Write a program to reverse the array. -->
+<script>
+    let arr = [];
+    let size = parseInt(prompt("Enter the size of array "));
+    for (let i = 0; i < size; i++) {
+        arr[i] = prompt("Enter the " + (i + 1) + " element in array ");
+
+    }
+    let temp;
+    for (let i = 0; i < parseInt(size / 2); i++) {
+        temp = arr[i];
+        arr[i] = arr[size - i];
+        arr[size - i] = temp;
+    }
+    document.write("After reversing array  ");
+    for (let i = 0; i < arr.length; i++) {
+
+        document.write(arr[i]);
+    }
+</script>

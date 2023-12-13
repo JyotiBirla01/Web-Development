@@ -1,0 +1,39 @@
+
+.bg-image {
+    background-image: url(./image/image-photoshop/mbr-5.jpg);
+    height: 120vh;
+    width: 98.9vw;
+    background-size: cover;
+    background-position: center ;
+
+
+}
+.header-container{
+    border: 1px solid aqua;
+    position: relative;
+}
+
+.container-fluid a{
+    color: white;
+}
+.left-side{
+    font-size: 3em;
+    border: 1px solid red;
+}
+.header{
+    border: 1px solid red;
+    height: 5em;
+   width: 10% !important;
+}
+.header ul li a{
+    font-weight: 500;
+}
+.menu-bar{
+    border: 2px solid magenta;
+    position: relative;
+    left: 30em;
+   
+}
+.buy-now-btn{
+    border: 1px solid blue;
+}

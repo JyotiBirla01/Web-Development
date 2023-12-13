@@ -1,0 +1,17 @@
+<script>
+    var customer={
+         id:100,
+        cname:"ABC",
+        age:24,
+        mobile:783642429,
+        bal:5000,
+        withdraw:function(amount,bal){
+            this.bal-=amount;
+            document.write("<br> Withdraw amount is  "+amount+" remain balance"+this.bal);
+
+        },wish:function(){
+            document.write("hello");
+        }   
+    }
+    customer.withdraw(7000,30000);
+</script>

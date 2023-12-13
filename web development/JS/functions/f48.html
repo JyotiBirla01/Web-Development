@@ -1,0 +1,45 @@
+<!-- Q.6 Sort the array of 0s , 1s and 2s -->
+<script>
+    var sort = (callback) => {
+        let arr = [];
+        let size = parseInt(prompt("Enter the size "));
+        for(let i=0; i<size; i++){
+            arr[i]= parseInt(prompt("Enter the "+(i+1)+" element "));
+        }
+        callback(arr);
+
+    }
+    sort((arr) => {
+        let i = 0, count1 = 0, count2 = 0, count3 = 0;
+        while (i < arr.length) {
+            if (arr[i] == 0)
+                count1++;
+            if (arr[i] == 1)
+                count2++;
+            if (arr[i] == 2)
+                count3++;
+            i++;
+        }
+        i = 0;
+        while (count1 > 0) {
+            arr[i++] = 0;
+            count1--;
+
+        }
+        while (count2 > 0) {
+            arr[i++] = 1;
+            count2--;
+
+        }
+        while (count3 > 0) {
+            arr[i++] = 2;
+            count3--;
+
+        }
+        document.write("After sorting 0s , 1s and 2s ");
+        
+        for(const element  of arr )
+        document.writeln(element);
+
+    })
+</script>

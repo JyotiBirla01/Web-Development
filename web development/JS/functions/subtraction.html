@@ -1,0 +1,11 @@
+<script>
+    var subtraction=function(a,b){
+        this.a=a;
+        this.b=b;
+        this.sub=function(){
+        document.write(this.a-this.b);
+        }
+    }
+    var obj= new subtraction(100,20);
+    obj.sub();
+</script>

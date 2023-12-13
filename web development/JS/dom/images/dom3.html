@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <center>
+        <img id="main" src="./pexels-photo-326055.jpeg" alt="" height="300px" width="300px"><br>
+        <button onclick="changeImage(1)">+</button>
+        <button onclick="changeImage(0)">-</button>
+    </center>
+    <script>
+        var imgobj = document.getElementById("main");
+        function changeImage(n) {
+            if (n) {
+                imgobj.height += 30;
+                imgobj.width += 30;
+            }
+            else {
+                imgobj.height -= 30;
+                imgobj.width -= 30;
+            }
+        }
+    </script>
+</body>
+
+</html>

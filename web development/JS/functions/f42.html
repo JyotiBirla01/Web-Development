@@ -1,0 +1,21 @@
+<!-- Q.2 Find minimum and maximum element in array -->
+<script>
+    let fun = (callback) => {
+        let arr = [1, 6, 2, 400, 5, 2, 0];
+        callback(arr);
+
+    }
+    fun((arr) => {
+        let max = Number.MIN_VALUE;
+        let min = Number.MAX_VALUE;
+        for (let i = 1; i <= arr.length; i++) {
+            if (arr[i] > max)
+                max = arr[i];
+            if (arr[i] < min)
+                min = arr[i];
+
+        }
+        document.write("Minimum value in array is "+min+"<br>");
+        document.write("Maximum value in array is "+max);
+    })
+</script>

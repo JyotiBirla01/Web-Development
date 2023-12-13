@@ -1,0 +1,21 @@
+<!-- Q.5 Find occurrence of an integer number in array. -->
+<script>
+    var occurence=(callback)=>{
+let arr=[];
+let size=parseInt(prompt("Enter the size"));
+for(let i=0; i<size; i++){
+    arr[i]= parseInt(prompt("Enter the "+(i+1) +" element  "));
+}
+let number= parseInt(prompt("Enter the number to find  "));
+callback(arr);
+    }
+    occurence(()=>{
+        let count=0;
+for(let i=0; i<arr.length; i++){
+    if(arr[i]==number)
+    count++;
+    break;
+}
+document.write("The number of occurence of element is "+count);
+    })
+</script>

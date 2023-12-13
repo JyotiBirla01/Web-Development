@@ -1,0 +1,16 @@
+<!-- 23. Write a Java program to find the sum and average of one dimensional integer array.  -->
+<script>
+let arr=[];
+     let i=0,j=0,sum=0,avg;
+    let n= parseInt(prompt("Enter the size of array "));
+    for( i=0; i<n; i++){
+        arr[i]=parseInt(prompt("Enter the "+(i+1)+ " elements "));
+
+    } 
+    for(let i=0; i<n; i++ ){
+        sum+=arr[i];
+        avg=parseInt(sum/2);
+    }
+    document.write("Sum "+sum+"<br>");
+    document.write("Average  "+avg)
+</script> 

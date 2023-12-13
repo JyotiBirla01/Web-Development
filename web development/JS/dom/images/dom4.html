@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    #main {
+      width: 100px;
+      height: 100px;
+      /* display: inline-block; */
+    }
+  </style>
+</head>
+<body>
+  <center>
+    <div id="main" style="border: 1px solid black;"></div> <!-- Replace <img> with <div> -->
+    <br/>
+    <button onclick="changeImageSize(1)">+</button>
+    <button onclick="changeImageSize(0)">-</button>
+  </center>
+  <script>
+    function changeImageSize(n){
+      var divObj = document.getElementById("main");
+      var currentWidth = divObj.offsetWidth;
+      
+      var currentHeight = divObj.offsetHeight;
+
+      if(n){
+        divObj.style.width = currentWidth + 20 + 'px';
+        divObj.style.height = currentHeight + 20 + 'px';
+      }
+      else{
+        divObj.style.width = currentWidth - 20 + 'px';
+        divObj.style.height = currentHeight - 20 + 'px';
+      }
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!-- Q.5 Find the kth largest and kth smallest element in array. -->
+<script>
+    function kth(callback) {
+        var arr = [];
+        var size = parseInt(prompt("Enter the size  "));
+        for (let i = 0; i < size; i++) {
+            arr[i] = parseInt(prompt("Enter the " + (i + 1) + " elements "));
+        }
+        callback(arr);
+
+    }
+    kth(function (arr) {
+        for (let i = 0; i < arr.length; i++) {
+            for (let j = i + 1; j < arr.length; j++) {
+                if (arr[i] > arr[j]) {
+                    arr[i] = arr[i] + arr[j];
+                    arr[j] = arr[i] - arr[j];
+                    arr[i] = arr[i] - arr[j];
+
+                }
+
+            }
+            // document.write(arr[i]);
+        }
+
+        var temp = [arr.length];
+        let i = 0, j = 0;
+        for (i = 0; i < arr.length; i++) {
+            for (j = 0; j < arr.length; j++) {
+                if (arr[i] == arr[j])
+                    break;
+            }
+            if (i == j) {
+                temp[i] = arr[i];
+                // document.write(temp[i]);
+            }
+        }
+        document.write("Kth largest element is "+(temp[temp.length-1]+"<br>"));
+        document.write("Kth smallest element is "+(temp[0]));
+
+    });
+</script>

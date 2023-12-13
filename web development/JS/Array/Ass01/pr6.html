@@ -1,0 +1,16 @@
+<!-- Q.5 Find occurrence of an integer number in array. -->
+<script>
+    let arr=[];
+    let n= parseInt(prompt("Enter the size of array "));
+    for( let i=0; i<n; i++){
+        arr[i]= parseInt(prompt("Enter the "+(i+1)+" element "));
+
+    }
+    let k= parseInt(prompt("Enter the value of k"));
+    let count=0;
+    for(let i=0; i<arr.length; i++){
+        if(arr[i]==k)
+        count++;
+    }
+    document.write("occurrence of "+ k+" in array is "+count);
+</script>   

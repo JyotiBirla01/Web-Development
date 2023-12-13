@@ -1,0 +1,23 @@
+<!-- . Write a java program to implement linear search -->
+<script>
+    let a=[];
+    let size=parseInt(prompt("Enter the size of array"));
+    for(let i=0; i<size; i++){
+        a[i]= parseInt(prompt("Enter the "+(i+1)+" elements "));
+    }
+    let ele= parseInt(prompt("Enter the element to search"));
+    let flag=false;
+
+for(let i=0; i<size; i++){
+   
+        if(ele==a[i]){
+        flag =true;
+      break;
+        }
+}
+    if(flag==true)
+    document.write("Found");
+else
+document.write("Not Found ");
+
+</script>

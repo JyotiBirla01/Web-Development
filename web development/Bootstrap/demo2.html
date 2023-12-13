@@ -1,11 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Include Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    /* Optional: Add custom styles here */
+  </style>
 </head>
 <body>
-   <table class="table table-responsive"></table> 
+  <div class="container text-center">
+    <div id="main" class="w-50 h-50 mx-auto" style="background: url('images/shoes.jpg') center/cover;"></div>
+    <br/>
+    <button onclick="changeImageSize(1)">+</button>
+    <button onclick="changeImageSize(0)">-</button>
+  </div>
+  <!-- Include Bootstrap JS and Popper.js -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    function changeImageSize(n){
+      var divObj = document.getElementById("main");
+      var currentWidth = divObj.offsetWidth;
+      var currentHeight = divObj.offsetHeight;
+
+      if(n){
+        divObj.style.width = currentWidth + 20 + 'px';
+        divObj.style.height = currentHeight + 20 + 'px';
+      }
+      else{
+        divObj.style.width = currentWidth - 20 + 'px';
+        divObj.style.height = currentHeight - 20 + 'px';
+      }
+    }
+  </script>
 </body>
 </html>

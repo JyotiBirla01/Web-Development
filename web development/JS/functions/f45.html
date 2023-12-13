@@ -1,0 +1,22 @@
+<!-- 4 Write a program to sort the array -->
+<script>
+    let occurence = (callback) => {
+        var arr = [];
+        var size = parseInt(prompt("Enter the size of array "));
+        for (let i = 0; i < size; i++) {
+            arr[i] = parseInt(prompt("Enter the " + (i + 1) + " elements "));
+
+        }
+        let number=parseInt(prompt("Enter the number to find occurence "));
+        callback(arr,number);
+    }
+    occurence( (arr,number) => {
+        let count=0;
+        for (let i = 0; i < arr.length; i++) {
+            if(arr[i]==number)
+            count++;
+
+        }
+        document.write(count);
+    })
+</script>

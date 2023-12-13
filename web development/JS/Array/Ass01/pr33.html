@@ -1,0 +1,28 @@
+<!-- 33. Write a java program to implement binary search algorithm -->
+<script>
+    let arr=[];
+     let i=0,j=0,flag=false;
+    let n= parseInt(prompt("Enter the size of array "));
+   
+    for( i=0; i<n; i++){
+        arr[i]=parseInt(prompt("Enter the "+(i+1)+ " elements "));
+
+    } 
+    let ele=parseInt(prompt("Enter the element to search "));
+    let low=0,high=n-1,mid=parseInt(low+high)/2; 
+    while(low<=high){
+        mid=parseInt(low+high)/2;
+        if(ele==arr[mid]){
+        flag=true;
+    break;
+        }
+else if(ele>arr[mid])
+low=mid+1;
+else
+high=mid-1;
+    }
+    if(flag)
+    document.write("Element found ");
+else
+document.write("Element no found ");
+</script>
