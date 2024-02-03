@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation</title>
+    <style>
+        .main-container{
+            height: auto;
+            width: auto;
+            border: 2px solid black;
+
+        }
+        small{
+            color: red ;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+            <form action="">
+        <!-- ==================NAME=================== -->
+        <center>   <h2>Registration Form </h2>
+      
+    
+        <label for="name">Name</label>
+        <input id="username" name="name" type="text" onkeyup="validateName()"><br>
+        <small id="nameError"></small><br><br>
+        <!-- ===================Email=========================== -->
+        <label for="email">Email</label>
+        <input id="email" name="name" type="email" onkeyup="validateEmail()"><br><br>
+        <small id="emailError"> </small><br><br>
+       
+        <!-- ====================Gender======================= -->
+        <label for="contactno">Gender &nbsp; &nbsp;</label>
+        <label for="Male">Male</label>
+        <input class="Gender" name="Gender" type="radio">
+        <label for="Female">Female</label>
+        <input class="Gender" name="Gender" type="radio"><br><br>
+        <small id="genderError"> </small><br><br>
+        <!-- <small id="contactno">Enter only digits </small><br><br> -->
+
+    
+            <button type="submit" onclick="return validateForm()">Submit </button>
+       
+
+    </center>
+</form>
+</div>
+
+    <script>
+        function validateName(){
+            var name_validation=/^[A-Za-z]+$/;
+            var status =true;
+            var username=document.getElementById("username").value;
+            var nameError=document.getElementById("nameError");
+            if(username.length==0){
+                 nameError.innerHTML="name  is required";
+                status=false;
+            }
+            else if(!name_validation.test(username)){
+                nameError.innerHTML="Enter only alphabets ";
+                status=false;
+            }
+           else{
+                nameError.innerHTML="";
+            }  
+            return status;
+
+        }
+        function validateEmail(){
+            var status = true;
+            var email = document.getElementById("email").value;
+            var emailError = document.getElementById("emailError");
+            if(email.length == 0){
+                status = false;
+                emailError.innerHTML = "Email id is required";
+            }
+            else{
+               let atTheRateIndex =  email.indexOf("@");
+               if(atTheRateIndex == -1){
+                status = false;
+                emailError.innerHTML  = "Invalid email (@ not present)";
+                return status;
+               }
+               let lastIndexOfAtTheRate = email.lastIndexOf("@");
+               if(atTheRateIndex != lastIndexOfAtTheRate){
+                  status = false;
+                  emailError.innerHTML = "Invalid email ( 2 @ present)";
+                  return status;
+               }
+
+               let stringAfterAtTheRate = email.substring(atTheRateIndex);
+               let dotIndex = stringAfterAtTheRate.lastIndexOf(".");
+               if(dotIndex == -1){
+                status = false;
+                emailError.innerHTML = "Invalid email ( . not present)";
+                return status;
+               }
+
+               let domainString = stringAfterAtTheRate.substring(dotIndex);
+               if( !(domainString == ".in" || domainString == ".com")){
+                status = false;
+                emailError.innerHTML = "Invalid email ( .in or .com not present)";
+                return status;
+               }
+
+               if(email.charAt(0) == '@'){
+                 status = false;
+                 emailError.innerHTML = "Invalid email ( starting with @)";
+                 return status;
+               }
+
+               emailError.innerHTML = "";
+            }
+            return status;
+          }
+        
+          function validateGender(){
+            status=true;
+            var checkGender= document.querySelector(".Gender");
+            var genderError=document.querySelector("#genderError");
+         
+            if(!checkGender.checked){
+                status=false;
+                genderError.innerHTML="Please check the radio button  ";
+
+            }
+            else
+            genderError.innerHTML=" ";
+            return status;
+            
+
+          }
+        function  validateForm(){
+           var namestatus=validateName(); 
+           var emailStatus=validateEmail();
+           var genderStatus=validateGender();
+
+        
+        if(namestatus &&emailStatus && genderStatus)
+            return true;
+        return false;
+        
+    }
+    
+    </script>
+</body>
+</html>

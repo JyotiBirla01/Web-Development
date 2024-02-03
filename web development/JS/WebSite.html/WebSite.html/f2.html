@@ -1,0 +1,99 @@
+var carts = document.querySelector("#cart-container");
+      carts.innerHTML = "";
+
+      var formDiv = document.createElement("div");
+      formDiv.setAttribute("style", "width:27%;box-shadow:10px 10px 10px 10px gray; margin-top:100px;");
+      
+      
+      var form = document.createElement("form");
+      form.setAttribute("class", "form-group");
+      form.setAttribute("style", "height:230px; width:60%;");
+      var cardNumber = document.createElement("input");
+      cardNumber.setAttribute("class", "form-control ms-5");
+      cardNumber.setAttribute("type", "text");
+      cardNumber.setAttribute("placeholder", "CardNumber");
+      cardNumber.setAttribute("style", "margin-top:10px;margin-bottom:3px");
+      var expDate = document.createElement("input");
+      expDate.setAttribute("type", "date");
+      expDate.setAttribute("placeholder", "Exp-Date");
+      expDate.setAttribute("class", "form-control mt-3 ms-5");
+      var cvcNo = document.createElement("input");
+      cvcNo.setAttribute("type", "text");
+      cvcNo.setAttribute("placeholder", "CVC-No");
+      cvcNo.setAttribute("class", "form-control mt-3 ms-5");
+      var backButton = document.createElement("button");
+      backButton.setAttribute("class", "btn btn-success mt-3 ms-5");
+      backButton.innerText = "Back";
+      var buyNow = document.createElement("button");
+      buyNow.setAttribute("class", "btn btn-success ms-3 mt-3");
+      buyNow.innerHTML = "Buy Now";
+
+      // ================================
+
+
+      backButton.addEventListener("click", () => {
+        var carts = document.querySelector("#cart-container");
+        carts.innerHTML = "";
+
+
+        var formdiv = document.createElement("div");
+        formdiv.setAttribute("style", "width:30%;margin-left:300px;box-shadow:10px 10px 10px gray;");
+     
+
+        var form = document.createElement("form");
+        form.setAttribute("class", "form-group");
+        form.setAttribute("style", "width:70%; margin-left:50px;");
+        var nameInput = document.createElement("input");
+        nameInput.setAttribute("type", "name");
+        nameInput.setAttribute("placeholder", "Name");
+        nameInput.setAttribute("class", "form-control mt-3");
+
+
+        var PhoneNumber = document.createElement("input");
+        PhoneNumber.setAttribute("type", "tl");
+        PhoneNumber.setAttribute("placeholder", "PhoneNumber");
+        PhoneNumber.setAttribute("class", "form-control mt-3");
+
+        var email = document.createElement("input");
+        email.setAttribute("type", "text");
+        email.setAttribute("placeholder", "email");
+        email.setAttribute("class", "form-control mt-3");
+
+
+        var address = document.createElement("input");
+        address.setAttribute("type", "address");
+        address.setAttribute("placeholder", "Address");
+        address.setAttribute("style", "height:100px");
+        address.setAttribute("class", "form-control mt-3");
+
+        var payButton = document.createElement("button");
+        payButton.setAttribute("class", "btn btn-success mt-3 mb-3");
+        payButton.innerText = "Pay to Card";
+        payButton.setAttribute("style", "margin-left:20px");
+
+        var backButton = document.createElement("button");
+        backButton.setAttribute("class", "btn btn-success mt-3 mb-3 ms-3");
+        backButton.innerText = "Back";
+
+        formdiv.appendChild(form);
+        form.appendChild(nameInput);
+        form.appendChild(PhoneNumber);
+        form.appendChild(email);
+        form.appendChild(address);
+        form.appendChild(backButton);
+        form.appendChild(payButton);
+        carts.appendChild(formdiv);
+      });
+
+      buyNow.addEventListener("click", () => {
+        window.alert("Congratulations !");
+
+    });
+
+    form.appendChild(cardNumber);
+    form.appendChild(expDate);
+    form.appendChild(cvcNo);
+    form.appendChild(backButton);
+    form.appendChild(buyNow);
+    formDiv.appendChild(form);
+    carts.appendChild(formDiv);
